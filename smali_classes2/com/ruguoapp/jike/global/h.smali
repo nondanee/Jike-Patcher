@@ -4712,7 +4712,7 @@
     :goto_2
     if-nez p1, :cond_5
 
-    const-string p1, "https://redirect.jike.ruguoapp.com/"
+    const-string p1, "jike://page.jk/web"
 
     .line 1333
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
@@ -4723,7 +4723,7 @@
 
     move-result-object p1
 
-    const-string v2, "redirect"
+    const-string v2, "url"
 
     invoke-virtual {p1, v2, v0}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
@@ -4734,31 +4734,6 @@
     move-result-object p1
 
     invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const-string v0, "Uri.parse(\"https://redir\u2026, url).build().toString()"
-
-    invoke-static {p1, v0}, Lkotlin/e/b/k;->a(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "jike://page.jk/web"
-
-    .line 1334
-    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
-
-    move-result-object v0
-
-    const-string v2, "url"
-
-    invoke-virtual {v0, v2, p1}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Landroid/net/Uri$Builder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
