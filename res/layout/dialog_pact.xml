@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" android:layout_marginStart="40.0dip" android:layout_marginEnd="40.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.widget.view.BottomDecoratedTextView android:textSize="@dimen/text_16" android:textColor="@color/jike_text_dark_gray" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
+    <com.ruguoapp.jike.widget.view.MaxHeightScrollView android:id="@id/scrollView" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:scroll_max_height="328.0dip">
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_dark_gray" android:id="@id/tvContent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/line_spacing_text_14" />
+    </com.ruguoapp.jike.widget.view.MaxHeightScrollView>
+    <TextView android:gravity="center" android:id="@id/tvConfirm" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" />
+    <TextView android:textColor="@color/jike_text_medium_gray" android:gravity="center" android:id="@id/tvCancel" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:text="@string/cancel" />
+</LinearLayout>

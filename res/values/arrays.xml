@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="chat_report_category_array">
+        <item>垃圾广告营销</item>
+        <item>侮辱谩骂骚扰</item>
+        <item>淫秽色情信息</item>
+        <item>违法有害信息</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="comment_hint">
+        <item>友善发言的人运气都不会太差</item>
+        <item>善意的发言会带来善意的回应</item>
+        <item>温暖的社区欢迎有爱的评论</item>
+        <item>发走心评论，交知心朋友</item>
+    </string-array>
+    <string-array name="comment_report_category">
+        <item>垃圾广告营销</item>
+        <item>嘲讽/不友善内容</item>
+        <item>侮辱谩骂骚扰</item>
+        <item>淫秽色情信息</item>
+        <item>违法有害信息</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="comment_str_sort_order">
+        <item>智能排序</item>
+        <item>时间排序</item>
+    </string-array>
+    <string-array name="conversation_operation">
+        <item>删除会话</item>
+    </string-array>
+    <string-array name="dialog_str_sort_way">
+        <item>按加入先后排序</item>
+        <item>按推送与否排序</item>
+    </string-array>
+    <string-array name="gender">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="image_action">
+        <item>作为表情发给微信好友</item>
+        <item>分享图片给好友</item>
+        <item>保存图片到相册</item>
+        <item>识别二维码</item>
+        <item>查看拍摄信息</item>
+    </string-array>
+    <string-array name="image_web_action">
+        <item>分享图片给好友</item>
+        <item>保存图片到相册</item>
+        <item>识别二维码</item>
+    </string-array>
+    <string-array name="push_platforms">
+        <item>选择推送</item>
+        <item>API</item>
+        <item>GTPUSH</item>
+        <item>JPUSH</item>
+        <item>FCM</item>
+        <item>FLYME</item>
+        <item>MI</item>
+        <item>HMS</item>
+        <item>OPPO</item>
+    </string-array>
+    <string-array name="random_color_list">
+        <item>\#9bb7d4</item>
+        <item>\#c94476</item>
+        <item>\#c02034</item>
+        <item>\#7ac5c5</item>
+        <item>\#e45833</item>
+        <item>\#89abe3</item>
+        <item>\#decdbf</item>
+        <item>\#9c1b31</item>
+        <item>\#595ca1</item>
+        <item>\#f0bf59</item>
+        <item>\#41b6ab</item>
+        <item>\#f2ddde</item>
+        <item>\#f05442</item>
+        <item>\#169c78</item>
+        <item>\#9bb7d4</item>
+    </string-array>
+    <string-array name="select_map_app">
+        <item>百度地图</item>
+        <item>高德地图</item>
+    </string-array>
+    <string-array name="story_tag_primary_color_list">
+        <item>\#FFFFFF</item>
+        <item>\#000000</item>
+        <item>\#E5583E</item>
+        <item>\#FFE411</item>
+        <item>\#1CAF5E</item>
+        <item>\#03A9F4</item>
+        <item>\#572285</item>
+    </string-array>
+    <string-array name="story_tag_secondary_color_list">
+        <item>\#000000</item>
+        <item>\#FFFFFF</item>
+        <item>\#FFFFFF</item>
+        <item>\#000000</item>
+        <item>\#FFFFFF</item>
+        <item>\#FFFFFF</item>
+        <item>\#FFFFFF</item>
+    </string-array>
+    <string-array name="third_person">
+        <item>他</item>
+        <item>她</item>
+        <item>TA</item>
+    </string-array>
+    <string-array name="ugc_message_report_category">
+        <item>垃圾广告营销</item>
+        <item>嘲讽/不友善内容</item>
+        <item>侮辱谩骂骚扰</item>
+        <item>淫秽色情信息</item>
+        <item>违法有害信息</item>
+        <item>@string/report_copycat</item>
+        <item>其他</item>
+    </string-array>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/Login.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/lay_up" style="@style/Login.InputBox">
+        <TextView android:id="@id/tv_country_code" style="@style/Login.CountryCode" />
+        <View android:background="@color/jike_divider_gray" android:layout_width="0.5dip" android:layout_height="30.0dip" />
+        <EditText android:id="@id/et_up" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/login_hint_phone" android:layout_weight="1.0" android:inputType="phone" style="@style/Login.Input" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_light_gray" android:gravity="center|right" android:id="@id/tv_get_code" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="70.0dip" android:text="@string/login_get_code" android:paddingEnd="@dimen/jike_list_padding_15" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/lay_down" style="@style/Login.InputBox">
+        <EditText android:id="@id/et_down" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/login_hint_code" android:maxEms="6" android:inputType="number" style="@style/Login.Input" />
+    </LinearLayout>
+    <TextView android:id="@id/tv_action" android:text="@string/account_login" style="@style/Login.ActionButton" />
+</LinearLayout>

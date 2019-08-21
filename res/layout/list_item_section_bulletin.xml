@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@id/lay_topic_bulletin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/jike_list_common_margin" android:foreground="?selectableItemBackgroundBorderless" app:cardBackgroundColor="@color/jike_background_white" app:cardCornerRadius="8.0dip" app:cardElevation="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <ImageView android:id="@id/iv_icon" android:background="@drawable/bg_circle_red" android:padding="7.0dip" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_common_notification_on" android:tint="@color/white" android:layout_centerVertical="true" android:layout_marginStart="@dimen/jike_list_common_margin" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_dark_gray" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_toStartOf="@id/iv_right_arrow" android:layout_toEndOf="@id/iv_icon" />
+        <ImageView android:id="@id/iv_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/jike_list_common_margin" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

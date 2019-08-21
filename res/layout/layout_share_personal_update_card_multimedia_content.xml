@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.ruguoapp.jike.widget.view.CropImageView android:id="@id/iv_pic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:dim_color="@color/image_color_filter_02" />
+            <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/lay_video_container" android:background="@drawable/share_video_mask" android:paddingBottom="@dimen/jike_list_common_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="240.0dip" android:layout_alignBottom="@id/iv_pic">
+                <ImageView android:layout_gravity="end" android:id="@id/iv_pic_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/ic_share_video_play_button" android:layout_marginEnd="20.0dip" />
+                <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                    <TextView android:textColor="@color/white" android:ellipsize="end" android:gravity="end" android:id="@id/tv_video_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="235.0dip" android:singleLine="true" />
+                    <TextView android:textColor="@color/white_ar50" android:layout_gravity="end" android:id="@id/tv_video_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <include android:id="@id/lay_music" android:visibility="gone" layout="@layout/layout_share_personal_update_card_music" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/text_light_gray" android:id="@id/tv_multimedia_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:layout_marginStart="25.0dip" />
+    <TextView android:textSize="@dimen/text_18" android:textColor="@color/text_dark_gray" android:ellipsize="end" android:id="@id/tv_multimedia_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="25.0dip" android:maxLines="30" android:lineSpacingExtra="@dimen/line_spacing_text_18" android:layout_marginStart="25.0dip" android:layout_marginEnd="25.0dip" />
+</LinearLayout>

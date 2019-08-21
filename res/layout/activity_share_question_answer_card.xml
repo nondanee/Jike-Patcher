@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lay_container" android:background="@color/text_dark_gray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <RelativeLayout android:id="@id/lay_snapshot" android:background="@color/yellow" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/share_bg_qna" android:scaleType="centerCrop" />
+                <ImageView android:id="@id/iv_logo_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:src="@drawable/ic_share_logo_top" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+                <ImageView android:id="@id/iv_logo_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_share_logo_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/lay_content_container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="42.0dip" android:layout_below="@id/iv_logo_top" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+                    <include layout="@layout/layout_share_personal_update_card_header" />
+                    <include layout="@layout/layout_share_question" />
+                    <include android:visibility="gone" layout="@layout/layout_share_answer" />
+                    <include layout="@layout/layout_share_ugc_card_qr_code" />
+                </LinearLayout>
+                <com.ruguoapp.jike.widget.view.badge.BadgeImageView android:id="@id/iv_avatar" android:layout_width="58.0dip" android:layout_height="48.0dip" android:layout_marginTop="25.0dip" android:paddingEnd="10.0dip" android:layout_marginStart="30.0dip" android:elevation="8.0dip" />
+            </RelativeLayout>
+        </ScrollView>
+        <include layout="@layout/layout_share_card_bottom_menu" />
+    </LinearLayout>
+    <include layout="@layout/layout_appbar_black" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_dark_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_padding" android:text="相关推荐" android:layout_marginStart="@dimen/jike_list_common_padding" />
+    <View android:layout_gravity="center_vertical" android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="12.0dip" />
+    <com.ruguoapp.jike.view.widget.HorizontalOverScrollLayout android:id="@id/lay_container" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="90.0dip" />
+</LinearLayout>

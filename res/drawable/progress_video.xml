@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:gravity="center_vertical" android:id="@android:id/background" android:height="3.0dip" android:drawable="@color/jike_text_medium_gray" />
+    <item android:gravity="center_vertical" android:id="@android:id/secondaryProgress" android:height="3.0dip">
+        <scale android:drawable="@color/jike_text_light_gray" android:scaleWidth="100%" />
+    </item>
+    <item android:gravity="center_vertical" android:id="@android:id/progress" android:height="3.0dip">
+        <scale android:drawable="@color/jike_yellow" android:scaleWidth="100%" />
+    </item>
+</layer-list>

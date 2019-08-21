@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.view.widget.RgViewPager android:id="@id/real_tab_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tab_layout" />
+    <com.google.android.material.tabs.TabLayout android:id="@id/tab_layout" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="@dimen/home_bottom_tab_height" android:layout_alignParentBottom="true" app:tabGravity="fill" app:tabIndicatorHeight="0.0dip" app:tabMaxWidth="0.0dip" app:tabMode="fixed" app:tabPaddingEnd="0.0dip" app:tabPaddingStart="0.0dip" />
+    <FrameLayout android:id="@id/lay_media_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/tab_layout" />
+    <ImageView android:id="@id/iv_tab_shadow" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_above="@id/tab_layout" />
+</RelativeLayout>

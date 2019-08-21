@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="jike_background_follow">#ff404040</color>
+    <color name="jike_background_gray">#ff1a1a1a</color>
+    <color name="jike_background_white">#ff262626</color>
+    <color name="jike_background_white_secondary">#ff1a1a1a</color>
+    <color name="jike_blue">#ff378db6</color>
+    <color name="jike_card_background_white">#ff2e2e2e</color>
+    <color name="jike_chat_system_message_background">#26ffffff</color>
+    <color name="jike_chat_system_message_text">#ffbfbfbf</color>
+    <color name="jike_circle_progress_background">#ffffe411</color>
+    <color name="jike_circle_progress_foreground">#ff404040</color>
+    <color name="jike_dark_blue">#ff378db6</color>
+    <color name="jike_divider_gray">#ff0d0d0d</color>
+    <color name="jike_explore_mask_color">#8a000000</color>
+    <color name="jike_green">#ff11733d</color>
+    <color name="jike_home_tab_refresh">#4c000000</color>
+    <color name="jike_light_gray_message_icon">#ff8e8e8e</color>
+    <color name="jike_message_topic_header">#ff262626</color>
+    <color name="jike_messages_gray">#ff6a6a6a</color>
+    <color name="jike_peep_post_header_background">#ff719eb6</color>
+    <color name="jike_personal_header_text_white">#cdffffff</color>
+    <color name="jike_placeholder_gray">#ff404040</color>
+    <color name="jike_story_card_shadow_big">#ff696969</color>
+    <color name="jike_story_card_shadow_small">#ff4e4e4e</color>
+    <color name="jike_text_dark_gray">#ffbfbfbf</color>
+    <color name="jike_text_light_gray">#ff808080</color>
+    <color name="jike_text_search">#ffbfbfbf</color>
+    <color name="jike_very_light_gray_fa">#ff1a1a1a</color>
+    <color name="jike_yellow">#ffb29f0b</color>
+</resources>

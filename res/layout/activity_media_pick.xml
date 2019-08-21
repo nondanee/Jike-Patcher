@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?jike_background_secondary_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/bg_shadow" android:background="@color/black_ar50" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/list_folder" android:background="?jike_background_primary_color" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.google.android.material.appbar.AppBarLayout android:theme="?jike_app_bar_theme" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?jike_background_primary_color" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:popupTheme="?jike_toolbar_theme">
+            <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/lay_folder" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_17" android:textColor="?jike_title_color" android:ellipsize="end" android:gravity="center" android:id="@id/tv_folder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="全部图片" android:singleLine="true" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/iv_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_down" android:tint="?jike_title_icon_tint" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+            <include android:layout_gravity="right" android:id="@id/lay_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="12.0dip" layout="@layout/layout_post_send" />
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView android:id="@id/iv_toolbar_shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" android:src="@drawable/shadow_appbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+</RelativeLayout>

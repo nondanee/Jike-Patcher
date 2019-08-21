@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:tint="@color/black_ar70" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+        <ImageView android:id="@id/iv_topic" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_13" android:textColor="@color/white_ar80" android:gravity="center_horizontal" android:id="@id/tv_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:maxLines="2" />
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_subscribed_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

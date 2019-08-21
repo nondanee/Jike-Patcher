@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/empty_view_default_margin_top" android:layout_marginBottom="@dimen/empty_view_default_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/placeholder_network_error" />
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_medium_gray" android:gravity="center_vertical" android:id="@id/tv_failure" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:text="加载不成功" android:drawableRight="@drawable/ic_navbar_query" android:drawablePadding="6.0dip" android:drawableTint="@color/jike_blue" />
+    <TextView android:textSize="@dimen/text_16" android:textColor="@color/jike_text_dark_gray" android:gravity="center_horizontal" android:id="@id/tv_retry" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" android:text="点击重试" android:paddingStart="18.0dip" android:paddingEnd="18.0dip" />
+</LinearLayout>

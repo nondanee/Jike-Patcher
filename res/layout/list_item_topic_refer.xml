@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_radius="2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivTopic" android:layout_width="42.0dip" android:layout_height="42.0dip" />
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_dark_gray" android:ellipsize="end" android:id="@id/tvTopic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="10.0dip" />
+</com.ruguoapp.jike.view.widget.GradualLinearLayout>

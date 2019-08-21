@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layContainer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:tint="@color/black_ar30" />
+    <com.ruguoapp.jike.business.main.ui.topicdetail.widget.slider.SlideLayout android:id="@id/lay_slide" android:layout_width="fill_parent" android:layout_height="fill_parent" app:disable_slider_refresh="true" app:overlay_distance="12.0dip">
+        <com.ruguoapp.jike.business.main.ui.topicdetail.widget.MinVerticalMarginFrameLayout android:id="@id/lay_header" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:min_vertical_margin="@dimen/topic_slider_min_visible_height" />
+        <com.ruguoapp.jike.business.main.ui.topicdetail.widget.MinVerticalMarginFrameLayout android:id="@id/lay_slider" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.ruguoapp.jike.view.widget.nestedscroll.RefreshViewLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:inverse_color="true" app:transparent="true" />
+        <include layout="@layout/layout_actionbar" />
+    </com.ruguoapp.jike.business.main.ui.topicdetail.widget.slider.SlideLayout>
+    <com.ruguoapp.jike.business.main.ui.topicdetail.widget.TopicFloatingActionView android:layout_gravity="end|bottom|center" android:id="@id/floating_action_view" android:layout_width="wrap_content" android:layout_height="57.0dip" android:layout_marginBottom="77.0dip" />
+    <FrameLayout android:id="@id/lay_status_container" android:background="@color/jike_background_white" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/lay_container" android:background="@color/jike_card_background_white" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="5.0dip" android:elevation="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/lay_pic_container" android:layout_width="fill_parent" android:layout_height="44.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent">
+        <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_weight="1.0" />
+        <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_weight="1.0" android:alpha="0.8" />
+        <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_weight="1.0" android:alpha="0.4" />
+        <ImageView android:layout_width="0.0dip" android:layout_height="fill_parent" android:scaleType="centerCrop" android:layout_weight="1.0" android:alpha="0.1" />
+    </LinearLayout>
+    <include layout="@layout/layout_portrait_card_header" />
+    <TextView android:textSize="@dimen/text_11" android:textColor="@color/jike_text_medium_gray" android:ellipsize="marquee" android:id="@id/tv_music_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constrainedWidth="true" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_title" />
+    <TextView android:textSize="@dimen/text_11" android:textColor="@color/jike_text_medium_gray" android:ellipsize="end" android:id="@id/tv_play_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="5.0dip" app:layout_constraintStart_toEndOf="@id/tv_music_content" app:layout_constraintTop_toBottomOf="@id/tv_title" app:layout_goneMarginStart="0.0dip" />
+    <ImageView android:id="@id/iv_music_play" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginBottom="7.0dip" android:layout_marginEnd="7.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/lay_anim_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/btn_back" android:background="?actionBarItemBackground" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/ic_navbar_back" android:tint="?jike_search_poi_bar_input_hint_color" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_navbar_search" />
+    <EditText android:textSize="@dimen/text_16" android:textColor="?jike_search_poi_bar_input_color" android:textColorHint="?jike_search_poi_bar_input_hint_color" android:id="@id/et_input_field" android:background="@null" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/search_hint_tab" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionSearch" android:layout_marginStart="@dimen/jike_list_common_margin" />
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="7.0dip">
+        <ProgressBar android:id="@id/progress_bar_searching" android:visibility="invisible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminate="true" android:layout_centerInParent="true" style="?android:progressBarStyleSmall" />
+        <ImageView android:id="@id/iv_clear_query" android:padding="12.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_close_black_rounded" />
+    </RelativeLayout>
+</LinearLayout>

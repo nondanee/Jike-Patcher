@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:background="@color/jike_background_white" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ruguoapp.jike.business.personal.widget.PersonalSectionLayout android:id="@id/lay_medal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:psl_drawable="@drawable/ic_personal_page_badge" app:psl_title="徽章">
+            <include layout="@layout/layout_medals_content" />
+        </com.ruguoapp.jike.business.personal.widget.PersonalSectionLayout>
+        <com.ruguoapp.jike.business.personal.widget.PersonalSectionLayout android:id="@id/lay_basic_info" android:background="@color/jike_background_white" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:psl_drawable="@drawable/ic_personal_page_basic_information" app:psl_title="基本信息">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_medium_gray" android:id="@id/tv_basic_info_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="8.0dip" android:layout_marginStart="41.0dip" />
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_medium_gray" android:id="@id/tv_basic_info_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="8.0dip" android:layout_marginStart="120.0dip" />
+            </FrameLayout>
+        </com.ruguoapp.jike.business.personal.widget.PersonalSectionLayout>
+        <com.ruguoapp.jike.business.personal.widget.PersonalSectionLayout android:id="@id/lay_school" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:psl_drawable="@drawable/ic_personal_page_education" app:psl_title="学校">
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_medium_gray" android:id="@id/tv_school_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:lineSpacingExtra="8.0dip" android:layout_marginStart="41.0dip" />
+        </com.ruguoapp.jike.business.personal.widget.PersonalSectionLayout>
+        <com.ruguoapp.jike.business.personal.widget.PersonalSectionLayout android:id="@id/lay_industry" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:psl_drawable="@drawable/ic_personal_page_career" app:psl_title="行业" />
+        <com.ruguoapp.jike.business.personal.widget.PersonalSectionLayout android:id="@id/lay_bio" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:psl_drawable="@drawable/ic_personal_page_self_description" app:psl_title="签名" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

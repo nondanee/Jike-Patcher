@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.nestedscroll.NestedRefreshLayout android:id="@id/lay_nested_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.view.widget.nestedscroll.NestedCoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ruguoapp.jike.view.widget.RgViewPager android:id="@id/view_pager" android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        <com.ruguoapp.jike.view.widget.CreatePostFabView android:layout_gravity="end|bottom|center" android:id="@id/fab_create_original_post" android:layout_width="@dimen/fab_create_original_post_size" android:layout_height="@dimen/fab_create_original_post_size" android:layout_margin="@dimen/jike_list_common_margin" android:src="@drawable/ic_personaltab_activity_post_messages_big" />
+        <com.ruguoapp.jike.view.widget.nestedscroll.NestedAppBarLayout android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:titleEnabled="false">
+                <include layout="@layout/layout_hash_tag_header" />
+                <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:contentInsetEnd="0.0dip" app:contentInsetLeft="0.0dip" app:contentInsetRight="0.0dip" app:contentInsetStart="0.0dip" app:layout_collapseMode="pin">
+                    <include layout="@layout/layout_actionbar" />
+                </androidx.appcompat.widget.Toolbar>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+            <FrameLayout android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="5.0dip" android:paddingEnd="5.0dip">
+                <com.google.android.material.tabs.TabLayout android:id="@id/tab" android:layout_width="fill_parent" android:layout_height="44.0dip" app:tabIndicator="@drawable/tab_home_indicator" app:tabIndicatorColor="@color/jike_yellow" app:tabMinWidth="0.0dip" app:tabMode="scrollable" app:tabPaddingEnd="0.0dip" app:tabPaddingStart="0.0dip" />
+            </FrameLayout>
+            <View style="@style/Divider" />
+        </com.ruguoapp.jike.view.widget.nestedscroll.NestedAppBarLayout>
+        <FrameLayout android:id="@id/lay_status_container" android:background="@color/jike_background_white" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.ruguoapp.jike.view.widget.nestedscroll.NestedCoordinatorLayout>
+    <com.ruguoapp.jike.view.widget.nestedscroll.RefreshViewLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:inverse_color="true" app:transparent="true" />
+</com.ruguoapp.jike.view.widget.nestedscroll.NestedRefreshLayout>

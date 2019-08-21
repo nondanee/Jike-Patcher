@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.business.main.ui.topicdetail.widget.slider.SlideBarLayout android:id="@id/lay_slide_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@drawable/shadow_bottom_bar" android:layout_width="fill_parent" android:layout_height="12.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_tab" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip">
+                <View android:layout_gravity="center_horizontal" android:background="@drawable/ic_topic_scroll_bar_thin" android:layout_width="40.0dip" android:layout_height="4.0dip" android:layout_marginTop="5.0dip" />
+                <com.google.android.material.tabs.TabLayout android:id="@id/tab" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="44.0dip" app:layout_flexShrink="1.0" app:tabIndicator="@drawable/tab_indicator_topic" app:tabIndicatorColor="@color/jike_yellow" app:tabMinWidth="0.0dip" app:tabMode="scrollable" app:tabPaddingEnd="0.0dip" app:tabPaddingStart="0.0dip" app:tabSelectedTextColor="@color/jike_text_dark_gray" app:tabTextColor="@color/jike_text_medium_gray" />
+                <View style="@style/Divider" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.ruguoapp.jike.business.main.ui.topicdetail.widget.slider.SlideBarLayout>
+    <com.ruguoapp.jike.business.main.ui.topicdetail.widget.InterceptFrameLayout android:id="@id/lay_view_pager_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ruguoapp.jike.view.widget.RgViewPager android:id="@id/view_pager" android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.ruguoapp.jike.business.main.ui.topicdetail.widget.InterceptFrameLayout>
+</LinearLayout>

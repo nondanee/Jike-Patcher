@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/jike_background_white" android:paddingTop="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/illustration_loginsheet_guoguo" android:layout_marginEnd="8.0dip" />
+        <TextView android:textSize="@dimen/text_18" android:textColor="@color/jike_text_dark_gray" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登录后更多精彩" />
+    </LinearLayout>
+    <com.ruguoapp.jike.widget.view.slicetext.SliceTextView android:textSize="@dimen/text_12" android:layout_gravity="center_horizontal" android:id="@id/tvTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="35.0dip" />
+</LinearLayout>

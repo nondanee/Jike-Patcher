@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="?actionBarSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="200.0dip">
+                <com.ruguoapp.jike.video.ui.widget.VideoPlayLayout android:id="@id/lay_video" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_centerInParent="true" />
+                <com.ruguoapp.jike.video.ui.widget.VideoStatusIndicator android:id="@id/video_status_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </RelativeLayout>
+            <EditText android:id="@id/et_response" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Video response data" />
+            <Button android:id="@id/btn_start" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="开始播放" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

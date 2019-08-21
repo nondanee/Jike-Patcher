@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_color="@color/image_gradual_mask"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.widget.view.RatioImageView android:id="@id/iv_pic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:riv_ratio="0.46875" />
+    <com.ruguoapp.jike.widget.view.RatioRelativeLayout android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="wrap_content" app:rrl_ratio="0.46875" />
+</com.ruguoapp.jike.view.widget.GradualRelativeLayout>

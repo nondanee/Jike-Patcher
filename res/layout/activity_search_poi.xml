@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lay_root" android:background="?jike_background_primary_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" />
+    <LinearLayout android:orientation="vertical" android:background="?jike_background_primary_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ruguoapp.jike.view.widget.SearchActionBarLayout android:id="@id/lay_search_action_bar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="4.0dip" android:src="@drawable/shadow_appbar" />
+    </LinearLayout>
+</RelativeLayout>

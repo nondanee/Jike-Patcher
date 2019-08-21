@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ruguoapp.jike.business.personal.widget.PersonalInfoLayout android:id="@id/lay_school" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" app:pil_description="点击选择学校" app:pil_description_margin_left="123.0dip" app:pil_title="学校" />
+        <com.ruguoapp.jike.business.personal.widget.PersonalInfoLayout android:id="@id/lay_major" android:layout_width="fill_parent" android:layout_height="wrap_content" app:pil_description="输入专业" app:pil_description_margin_left="123.0dip" app:pil_tip="选填" app:pil_title="专业" />
+        <com.ruguoapp.jike.business.personal.widget.PersonalInfoLayout android:id="@id/lay_year" android:layout_width="fill_parent" android:layout_height="wrap_content" app:pil_description="点击选择年份" app:pil_description_margin_left="123.0dip" app:pil_tip="选填" app:pil_title="入学年份" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/rg_privacy_type" android:paddingLeft="@dimen/jike_list_padding_15" android:paddingRight="@dimen/jike_list_padding_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <RadioButton android:textSize="@dimen/text_14" android:textColor="@color/jike_text_medium_gray" android:id="@id/rb_public" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:checked="true" android:text="公开（所有人可见）" android:layout_weight="1.0" app:buttonTint="@color/checkbox_tint" />
+            <RadioButton android:textSize="@dimen/text_14" android:textColor="@color/jike_text_medium_gray" android:id="@id/rb_alumni_only" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="仅校友可见" android:layout_weight="1.0" app:buttonTint="@color/checkbox_tint" />
+        </RadioGroup>
+        <com.ruguoapp.jike.view.widget.GradualLinearLayout android:id="@id/lay_delete_school" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <FrameLayout android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ruguoapp.jike.core.da.view.DrawableDaTextView android:textSize="@dimen/text_15" android:textColor="@color/jike_text_dark_gray" android:layout_gravity="center" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除学校信息" android:drawableLeft="@drawable/ic_personal_tab_delete" android:drawablePadding="5.0dip" />
+            </FrameLayout>
+        </com.ruguoapp.jike.view.widget.GradualLinearLayout>
+    </LinearLayout>
+    <include layout="@layout/layout_appbar_right_text" />
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.widget.view.StrokeImageView android:id="@id/civ_grid_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/image_placeholder" app:stroke_iv_color="@color/jike_divider_gray" />
+    <ImageView android:id="@id/iv_pic_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_messages_pictype_gif" android:layout_alignParentBottom="true" android:layout_marginEnd="6.0dip" android:layout_alignParentEnd="true" />
+    <ImageView android:id="@id/iv_grid_placeholder_mask" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+</merge>

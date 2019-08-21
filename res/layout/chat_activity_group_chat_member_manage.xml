@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layRootContainer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" app:layout_constraintTop_toBottomOf="@id/searchBar" />
+    <com.ruguoapp.jike.view.widget.SearchActionBarLayout android:id="@id/searchBar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/ivShadow" android:layout_width="fill_parent" android:layout_height="4.0dip" android:src="@drawable/shadow_appbar" app:layout_constraintTop_toBottomOf="@id/searchBar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

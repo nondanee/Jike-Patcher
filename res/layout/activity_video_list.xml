@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.InterceptRelativeLayout android:id="@id/lay_root" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:id="@id/lay_full_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/lay_tip_stub" android:layout="@layout/layout_video_list_tip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.ruguoapp.jike.view.widget.InterceptRelativeLayout>

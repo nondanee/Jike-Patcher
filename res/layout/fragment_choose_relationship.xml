@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lay_container" android:background="@color/jike_background_gray" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ruguoapp.jike.view.widget.GradualLinearLayout android:id="@id/lay_delete" android:background="@color/jike_background_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+        <FrameLayout android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ruguoapp.jike.core.da.view.DrawableDaTextView android:textSize="@dimen/text_15" android:textColor="@color/jike_text_dark_gray" android:layout_gravity="center" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="删除情感信息" android:drawableLeft="@drawable/ic_personal_tab_delete" android:drawablePadding="5.0dip" />
+        </FrameLayout>
+    </com.ruguoapp.jike.view.widget.GradualLinearLayout>
+</LinearLayout>

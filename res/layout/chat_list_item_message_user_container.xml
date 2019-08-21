@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tvTimestamp" android:visibility="gone" style="@style/Chat.Message.Timestamp" />
+    <include android:id="@id/layLeft" android:visibility="gone" layout="@layout/chat_list_item_message_user_container_left" />
+    <include android:id="@id/layRight" android:visibility="gone" layout="@layout/chat_list_item_message_user_container_right" />
+</LinearLayout>

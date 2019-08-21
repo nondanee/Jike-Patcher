@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textSize="@dimen/text_16" android:textColor="@color/jike_text_dark_gray" android:textColorHint="@color/jike_text_light_gray" android:id="@id/et_content" android:background="@null" android:padding="@dimen/jike_list_common_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/line_spacing_text_16" />
+</FrameLayout>

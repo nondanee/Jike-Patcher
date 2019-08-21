@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/lay_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_hide_phone" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/jike_list_common_margin" app:mask_enable="false" app:settings_show_switch="true" app:settings_tip="@string/hide_phone_tip" app:settings_title="@string/hide_phone" />
+        <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_hide_weibo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/jike_list_common_margin" app:mask_enable="false" app:settings_show_switch="true" app:settings_tip="@string/hide_weibo_tip" app:settings_title="@string/hide_weibo" />
+        <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_block_stranger_chat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/jike_list_common_margin" app:mask_enable="false" app:settings_show_switch="true" app:settings_tip="@string/block_stranger_chat_tip" app:settings_title="@string/block_stranger_chat" />
+        <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_hide_subscribed_topics" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/jike_list_common_margin" app:mask_enable="false" app:settings_show_switch="true" app:settings_tip="@string/hide_subscribed_topics_tip" app:settings_title="@string/hide_subscribed_topics" />
+        <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_block" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settings_tip="@string/blocked_list_tip" app:settings_title="@string/blocked_list" />
+    </LinearLayout>
+    <include layout="@layout/layout_appbar" />
+</RelativeLayout>

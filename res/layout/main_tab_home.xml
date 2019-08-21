@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/lay_icon_text" style="@style/HomeTab.Layout">
+        <com.ruguoapp.jike.core.da.view.DaImageView android:id="@id/iv_main_tab_icon" android:src="@drawable/ic_tabbar_home" app:disable_shadow="true" style="@style/HomeTab.Icon" />
+        <com.ruguoapp.jike.view.widget.TransitionTextLayout android:id="@id/ttl_main_tab_title" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" app:ttl_text="@string/tab_home" app:ttl_text_color="@color/tab_title_color" app:ttl_text_size="@dimen/text_12" />
+    </LinearLayout>
+    <View android:id="@id/main_tab_badge" android:layout_alignTop="@id/lay_icon_text" android:layout_alignEnd="@id/lay_icon_text" style="@style/HomeTab.Badge" />
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="25.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="40.0dip" android:paddingStart="25.0dip" android:paddingEnd="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/text_light_gray" android:id="@id/tv_refer_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <TextView android:textSize="@dimen/text_18" android:textColor="@color/text_dark_gray" android:id="@id/tv_refer_comment_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lineSpacingExtra="@dimen/line_spacing_text_16" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/lay_refer_reply_comment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <View android:background="@color/divider_gray" android:layout_width="4.0dip" android:layout_height="20.0dip" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/text_light_gray" android:id="@id/tv_refer_reply_comment_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/line_spacing_text_14" android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+    <com.ruguoapp.jike.widget.view.CropImageView android:id="@id/iv_refer_comment_pic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:dim_color="@color/image_color_filter_02" />
+    <FrameLayout android:id="@id/lay_container_refer_cell" android:paddingTop="@dimen/jike_list_common_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ruguoapp.jike.view.widget.refer.MessageReferLayout android:id="@id/lay_message_refer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:refer_clickable="false" />
+        <com.ruguoapp.jike.business.feed.ui.widget.LinkInfoLayout android:id="@id/lay_link_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_enable="false" />
+    </FrameLayout>
+</LinearLayout>

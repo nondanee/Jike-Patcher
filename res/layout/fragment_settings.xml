@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.widget.view.PullScrollLayout android:orientation="vertical" android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.core.widget.NestedScrollView android:id="@id/pull_target" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_push" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settings_show_divider="true" app:settings_title="@string/activity_title_push_settings" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_show" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settings_show_divider="true" app:settings_title="@string/activity_title_display_settings" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_private" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settings_show_divider="true" app:settings_title="@string/activity_title_private_settings" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_account" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settings_title="@string/account_bind_setting" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_about" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:settings_show_divider="true" app:settings_title="@string/activity_title_about" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_join_us" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settings_title="@string/join_us" />
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/other" android:layout_marginStart="@dimen/list_item_margin_left_right" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_clear_cache" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settings_icon="@drawable/ic_setting_clear_cache" app:settings_show_divider="true" app:settings_title="@string/clear_cache" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_score_app" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settings_icon="@drawable/ic_setting_grade" app:settings_show_divider="true" app:settings_title="@string/score_app" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_logout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settings_icon="@drawable/ic_setting_log_out" app:settings_title="@string/account_logout" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <include android:id="@id/pull_footer" android:layout_width="fill_parent" android:layout_height="168.0dip" layout="@layout/layout_easter_egg" />
+</com.ruguoapp.jike.widget.view.PullScrollLayout>

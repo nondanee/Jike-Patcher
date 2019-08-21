@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.widget.view.StrokeImageView android:id="@id/ivPic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@color/image_placeholder" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:stroke_iv_color="@color/jike_divider_gray" app:stroke_iv_radius="4.0dip" />
+    <FrameLayout android:id="@id/layPicCount" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_margin="10.0dip" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <TextView android:textSize="11.0sp" android:textColor="@color/white" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/tvPicCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="3.0dip" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

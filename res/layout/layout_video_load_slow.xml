@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/lay_load_slow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/white" android:id="@id/tv_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载较慢？" />
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/text_dark_gray" android:id="@id/tv_error_button" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" android:text="前往外链观看" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" />
+</LinearLayout>

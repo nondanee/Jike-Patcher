@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_appbar" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_debug_video_auto_play" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_enable="false" app:settings_show_switch="true" app:settings_title="显示视频自动播放调试信息" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_show_first_frame_duration" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_enable="false" app:settings_show_switch="true" app:settings_title="显示首帧耗时" />
+            <Button android:id="@id/btn_play_video" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="播放视频" />
+            <Button android:id="@id/btn_play_original_post_video" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="播放原创动态视频" />
+            <Button android:id="@id/btnDebugVideo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="调试视频" />
+            <Button android:id="@id/btn_compress_video" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="压缩视频" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <EditText android:id="@id/et_compress_byte_kb" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="100 ~ 600" android:layout_weight="1.0" android:inputType="number" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="kb/s" />
+                <Button android:id="@id/btn_compress_byte_kb_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ok" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="compress size:" />
+                <EditText android:id="@id/et_compress_width" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="width" android:layout_weight="1.0" android:inputType="number" />
+                <EditText android:id="@id/et_compress_height" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="width" android:layout_weight="1.0" android:inputType="number" />
+                <Button android:id="@id/btn_compress_size_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ok" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

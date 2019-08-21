@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="500.0dip" android:layout_centerInParent="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="150.0dip" android:layout_height="150.0dip" android:src="@drawable/placeholder_no_search_result" />
+    <TextView android:textSize="@dimen/text_16" android:textColor="@color/jike_text_medium_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/search_not_found" />
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/text_dark_gray" android:id="@id/tv_feedback" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/feedback" android:paddingStart="@dimen/jike_list_common_padding" android:paddingEnd="@dimen/jike_list_common_padding" />
+</LinearLayout>

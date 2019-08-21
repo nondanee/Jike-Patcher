@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layContainer" android:background="@color/jike_background_white" android:paddingTop="100.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tvLog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="token=" android:textIsSelectable="true" />
+    <Button android:id="@id/btnGetToken" android:visibility="gone" android:layout_width="240.0dip" android:layout_height="48.0dip" android:layout_marginTop="5.0dip" android:text="获取token" />
+    <Button android:id="@id/btnLogin" android:layout_width="240.0dip" android:layout_height="48.0dip" android:layout_marginTop="5.0dip" android:text="一键登录" />
+    <Button android:id="@id/btnCopy" android:layout_width="240.0dip" android:layout_height="48.0dip" android:layout_marginTop="5.0dip" android:text="复制 token" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="comment_conversation_screen_name_max_width">110.0dip</dimen>
+    <dimen name="comment_screen_name_max_width">150.0dip</dimen>
+</resources>

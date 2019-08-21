@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jike_background_white_secondary" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_16" android:textColor="@color/jike_text_dark_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="44.0dip" android:maxLines="1" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="@dimen/jike_list_common_margin" />
+    <View style="@style/Divider" />
+    <FrameLayout android:id="@id/lay_rv_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

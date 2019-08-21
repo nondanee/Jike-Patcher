@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualRelativeLayout android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/lay_image_cover" android:layout_width="72.0dip" android:layout_height="72.0dip" android:layout_margin="@dimen/jike_list_common_margin">
+        <ImageView android:layout_gravity="center" android:id="@id/iv_image_cover" android:layout_width="72.0dip" android:layout_height="72.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_mask" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_personaltab_activity_video_play" />
+    </FrameLayout>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/lay_image_cover">
+        <TextView android:textColor="?jike_title_color" android:ellipsize="end" android:id="@id/tv_folder_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/JikeList.Main" />
+        <TextView android:ellipsize="end" android:id="@id/tv_image_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" style="@style/JikeList.Sub" />
+    </LinearLayout>
+    <View android:background="?jike_divider_color" style="@style/Divider" />
+</com.ruguoapp.jike.view.widget.GradualRelativeLayout>

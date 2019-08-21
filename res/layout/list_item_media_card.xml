@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_pic_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" />
+    <com.ruguoapp.jike.widget.view.DimImageView android:id="@id/iv_pic" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="50.0dip" android:layout_centerHorizontal="true" app:dim_color="@color/image_color_filter_02" />
+    <com.ruguoapp.jike.business.media.ui.CircleProgressView android:id="@id/circle_progress" android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_marginTop="45.0dip" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_pic_play" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="75.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/white" android:ellipsize="marquee" android:gravity="center_horizontal" android:id="@id/tv_music_info" android:padding="@dimen/jike_list_common_padding" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxEms="12" android:singleLine="true" android:shadowColor="@color/text_dark_gray" android:shadowDx="5.0" android:shadowDy="5.0" android:shadowRadius="10.0" android:layout_below="@id/iv_pic" android:layout_centerHorizontal="true" android:marqueeRepeatLimit="marquee_forever" />
+    <LinearLayout android:orientation="vertical" android:id="@id/lay_bottom_container" android:background="@color/black_ar50" android:padding="@dimen/jike_list_common_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_msg_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="6" />
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin">
+            <ImageView android:id="@id/iv_publisher_avatar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+            <TextView android:textSize="@dimen/text_12" android:textColor="@color/white_ar90" android:id="@id/tv_msg_topic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

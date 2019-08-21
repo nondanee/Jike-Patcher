@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.refer.MessageReferLayout android:id="@id/lay_refer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="@dimen/jike_list_common_margin" app:refer_clickable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />

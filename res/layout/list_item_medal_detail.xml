@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="30.0dip" android:paddingBottom="30.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.business.personal.widget.MedalView android:id="@id/medal_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:mv_size="102.0dip" />
+    <TextView android:textSize="@dimen/text_13" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_title" android:layout_width="131.0dip" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:maxLines="2" android:lineSpacingExtra="@dimen/line_spacing_text_13" />
+    <TextView android:textSize="@dimen/text_13" android:textColor="@color/white" android:id="@id/tv_time" android:paddingTop="1.0dip" android:paddingBottom="1.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ruguoapp.jike.view.widget.HorizontalOverScrollLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:layout_gravity="bottom|center" android:id="@id/toolbar_recycler_view" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="120.0dip" android:overScrollMode="never" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+    </com.ruguoapp.jike.view.widget.HorizontalOverScrollLayout>
+</merge>

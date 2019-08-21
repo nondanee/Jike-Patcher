@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/lay_app_bar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" layout="@layout/layout_find_user_entry" />
+                <TextView android:textSize="@dimen/text_18" android:textColor="@color/jike_text_dark_gray" android:id="@id/tv_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tab_following_personal_update" android:layout_centerInParent="true" android:layout_marginStart="6.0dip" />
+                <ImageView android:id="@id/iv_new_personal_update_avatar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" android:layout_marginStart="6.0dip" android:layout_toEndOf="@id/tv_tab_title" />
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <com.ruguoapp.jike.widget.view.shimmer.ShimmerFrameLayout android:id="@id/lay_shimmer_loading" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" app:auto_start="true" app:base_alpha="0.5" app:duration="2000">
+                        <View android:background="@color/jike_yellow" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+                    </com.ruguoapp.jike.widget.view.shimmer.ShimmerFrameLayout>
+                </FrameLayout>
+            </RelativeLayout>
+        </FrameLayout>
+        <ImageView android:id="@id/iv_toolbar_shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" android:src="@drawable/shadow_appbar" />
+    </LinearLayout>
+</FrameLayout>

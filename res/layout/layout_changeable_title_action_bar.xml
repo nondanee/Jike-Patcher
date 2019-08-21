@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/lay_anim_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/btn_back" android:background="?actionBarItemBackground" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/ic_navbar_back" android:tint="@color/jike_text_dark_gray" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_first" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="10.0dip" style="@android:style/TextAppearance.Holo.Widget.ActionBar.Title" />
+        <TextView android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/tv_second" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginEnd="10.0dip" style="@android:style/TextAppearance.Holo.Widget.ActionBar.Title" />
+    </FrameLayout>
+</LinearLayout>

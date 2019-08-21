@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Space android:id="@id/bottom_space" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <com.ruguoapp.jike.view.widget.multistep.MultiStepMenuLayout android:id="@id/lay_multi_step" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/lay_container" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_show_subscribe_page" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_enable="false" app:settings_show_switch="true" app:settings_tip="@string/show_subscribe_tab_tip" app:settings_title="@string/show_subscribe_tab" />
+        <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_no_pic_mode" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" app:mask_enable="false" app:settings_show_switch="true" app:settings_tip="@string/show_no_pic_mode_tip" app:settings_title="@string/show_no_pic_mode" />
+        <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_enable_video_auto_play" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" app:mask_enable="false" app:settings_show_switch="true" app:settings_tip="@string/enable_video_auto_play_tip" app:settings_title="@string/enable_video_auto_play" />
+        <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_disable_multi_surface" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" app:mask_enable="false" app:settings_show_switch="true" app:settings_tip="@string/disable_video_multi_surface_tip" app:settings_title="@string/disable_video_multi_surface" />
+    </LinearLayout>
+    <include layout="@layout/layout_appbar" />
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/user_item_height" android:paddingStart="@dimen/jike_list_common_padding" android:paddingEnd="@dimen/jike_list_common_padding">
+        <ImageView android:id="@id/iv_icon" android:layout_width="20.0dip" android:layout_height="wrap_content" android:minHeight="20.0dip" />
+        <TextView android:textSize="@dimen/text_16" android:textColor="@color/jike_text_dark_gray" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="16.0dip" />
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/jike_text_light_gray" android:ellipsize="end" android:id="@id/tv_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="16.0dip" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <com.ruguoapp.jike.widget.view.CircleTextView android:gravity="center" android:id="@id/tv_msg_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/iv_new_msg_avatar" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <TextView android:textSize="@dimen/text_10" android:textColor="@color/text_dark_gray" android:id="@id/tv_new" android:paddingTop="2.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="new" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" />
+    </LinearLayout>
+    <View style="@style/Divider" />
+</LinearLayout>

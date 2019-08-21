@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/lay_root" android:layout_width="fill_parent" android:layout_height="fill_parent" android:keepScreenOn="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/anim_view" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ruguoapp.jike.video.ui.widget.VideoPlayLayout android:layout_gravity="center" android:id="@id/lay_video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <FrameLayout android:id="@id/lay_status" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ruguoapp.jike.video.ui.controller.VideoController android:id="@id/video_controller" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.ruguoapp.jike.video.ui.widget.VolumeIndicator android:id="@id/volume_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip" />
+            <com.ruguoapp.jike.video.ui.widget.GestureIndicator android:id="@id/gesture_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

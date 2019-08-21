@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:id="@id/follow_reminder_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/jike_background_white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+        <ImageView android:id="@id/ivClose" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_common_close_gray" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_medium_gray" android:id="@id/tvMessage" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/text_dark_gray" android:id="@id/btnAction" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="去看看" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" />
+        <com.ruguoapp.jike.view.widget.FollowButton android:id="@id/btnFollow" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" app:fb_text_size="@dimen/text_14" />
+    </LinearLayout>
+    <View style="@style/Divider" />
+</merge>

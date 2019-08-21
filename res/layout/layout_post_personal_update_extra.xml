@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.business.personalupdate.create.ui.widget.LinearDrawOrderLayout android:orientation="vertical" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:last_draw_child_id="@id/lay_media_container"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/lay_media_container" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="@dimen/jike_list_common_margin">
+        <com.ruguoapp.jike.business.personalupdate.create.ui.widget.imagepick.ImagePickerRvLayout android:id="@id/lay_image_rv_picker" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="-3.0dip" android:layout_marginEnd="-3.0dip" />
+        <com.ruguoapp.jike.business.personalupdate.create.ui.widget.LinkReferLayout android:id="@id/lay_link_refer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.ruguoapp.jike.business.personalupdate.create.ui.widget.VideoPickerLayout android:id="@id/lay_video_picker" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.ruguoapp.jike.business.personalupdate.create.ui.widget.PoiPickerLayout android:id="@id/lay_poi_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" />
+    <CheckBox android:textSize="@dimen/text_14" android:textColor="@color/jike_text_light_gray" android:id="@id/cb_hide_personal_updates" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="不同步到个人主页" android:layout_marginStart="10.0dip" android:layout_marginEnd="25.0dip" android:buttonTint="@color/jike_text_light_gray" />
+</com.ruguoapp.jike.business.personalupdate.create.ui.widget.LinearDrawOrderLayout>

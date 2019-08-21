@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="40.0dip" app:alignItems="center" app:justifyContent="flex_end"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.view.widget.FavorView android:id="@id/iv_like" android:layout_width="36.0dip" android:layout_height="36.0dip" android:paddingStart="3.0dip" />
+    <com.ruguoapp.jike.widget.view.poptext.PopTextView android:id="@id/tv_popularity" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="20.0dip" app:textColor="@color/jike_text_medium_gray" app:textSize="@dimen/text_12" />
+    <ImageView android:id="@id/iv_comment" android:background="@null" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_messages_comment" android:paddingStart="@dimen/jike_list_common_padding" android:paddingEnd="5.0dip" app:layout_action_type="comment" />
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/jike_text_medium_gray" android:gravity="center_vertical" android:id="@id/tv_comment_count" android:layout_width="wrap_content" android:layout_height="fill_parent" android:minWidth="20.0dip" />
+    <com.ruguoapp.jike.widget.view.ConvertView android:id="@id/lay_collect" android:background="@null" android:padding="10.0dip" android:layout_width="40.0dip" android:layout_height="40.0dip" app:draw_anim="scale" />
+</com.google.android.flexbox.FlexboxLayout>

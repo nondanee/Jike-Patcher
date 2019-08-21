@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.widget.view.RatioRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:rrl_ratio="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="@drawable/shadow_transparent_black_ar50_bottom_round_radius4" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_alignParentBottom="true" />
+    <com.ruguoapp.jike.widget.view.badge.BadgeImageView android:id="@id/iv_avatar" android:layout_width="32.0dip" android:layout_height="25.0dip" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" android:paddingEnd="7.0dip" android:layout_marginStart="8.0dip" />
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/white" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignTop="@id/iv_avatar" android:layout_alignBottom="@id/iv_avatar" android:layout_marginEnd="8.0dip" android:layout_toEndOf="@id/iv_avatar" />
+</com.ruguoapp.jike.widget.view.RatioRelativeLayout>

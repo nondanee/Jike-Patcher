@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.view.widget.AccountSettingItem android:id="@id/lay_bind_phone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:asi_action="修改手机号码" app:asi_icon="@drawable/ic_login_connect_mobile_unconnected" app:asi_style="click" app:asi_title="手机号" />
+    <com.ruguoapp.jike.view.widget.AccountSettingItem android:id="@id/lay_wechat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" app:asi_icon="@drawable/ic_login_connect_wechat_unconnected" app:asi_style="check" app:asi_title="@string/platform_wechat" app:mask_enable="false" />
+    <com.ruguoapp.jike.view.widget.AccountSettingItem android:id="@id/lay_weibo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" app:asi_icon="@drawable/ic_login_connect_weibo_unconnected" app:asi_style="check" app:asi_title="@string/platform_weibo" app:mask_enable="false" />
+    <com.ruguoapp.jike.view.widget.AccountSettingItem android:id="@id/lay_qq" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="0.5dip" app:asi_icon="@drawable/ic_login_connect_qq_unconnected" app:asi_style="check" app:asi_title="@string/platform_qq" app:mask_enable="false" />
+    <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_reset_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:settings_title="@string/modify_password" />
+</LinearLayout>

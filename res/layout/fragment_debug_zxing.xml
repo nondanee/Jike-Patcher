@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layContainer" android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/debugSetting" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="parent" app:mask_enable="false" app:settings_show_switch="true" app:settings_title="开启 camera 调试信息显示" />
+    <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/debugCameraUse" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:layout_constraintTop_toTopOf="parent" app:mask_enable="false" app:settings_show_switch="true" app:settings_title="使用 Camera2" />
+    <TextView android:id="@id/tvLevel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_margin_15" android:text="当前设备的 camera2 等级：" />
+</LinearLayout>

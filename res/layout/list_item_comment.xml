@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualLinearLayout android:orientation="vertical" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/gradual_mask" android:paddingBottom="@dimen/jike_list_common_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/layout_comment_base" />
+        <com.ruguoapp.jike.business.comment.ui.widget.ReplyCommentLayout android:id="@id/lay_reply_comment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginStart="74.0dip" android:layout_marginEnd="@dimen/jike_list_common_margin" />
+    </LinearLayout>
+    <View android:id="@id/divider_line" style="@style/Divider" />
+</com.ruguoapp.jike.view.widget.GradualLinearLayout>

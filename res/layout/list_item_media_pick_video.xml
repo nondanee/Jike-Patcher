@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.widget.view.RatioRelativeLayout android:background="?jike_background_primary_color" android:layout_width="fill_parent" android:layout_height="fill_parent" app:rrl_ratio="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <View android:background="@drawable/bg_gradient_ar50" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/tv_duration" android:layout_alignParentBottom="true" />
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/jike_background_white" android:id="@id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:layout_alignParentBottom="true" android:layout_marginEnd="5.0dip" android:layout_alignParentEnd="true" />
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/ic_personaltab_activity_choose_video" android:layout_alignParentBottom="true" android:layout_marginStart="5.0dip" />
+</com.ruguoapp.jike.widget.view.RatioRelativeLayout>

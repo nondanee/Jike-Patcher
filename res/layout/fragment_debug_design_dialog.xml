@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="?actionBarSize" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:id="@id/et_pic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="https://cdn.ruguoapp.com/FspfRMC6CbcSbjTHnDdFRhQRgVZ3.JPG?imageView2/0/h/2000/interlace/1" android:hint="Picture url" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+            <EditText android:id="@id/et_pic_width" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1200" android:hint="Picture width" android:layout_weight="1.0" android:inputType="number" />
+            <EditText android:id="@id/et_pic_height" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="1600" android:hint="Picture height" android:layout_weight="1.0" android:inputType="number" />
+        </LinearLayout>
+        <EditText android:id="@id/et_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="当天转发最多微博" android:hint="Title" />
+        <EditText android:id="@id/et_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="William威廉陈伟霆: 今天我是霸霸" android:hint="Description" />
+        <EditText android:id="@id/et_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/ok" android:hint="Ok text" />
+        <EditText android:id="@id/et_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/cancel" android:hint="Cancel Text" />
+        <CheckBox android:id="@id/cb_fullscreen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全屏模式" />
+        <Button android:id="@id/btn_show" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="确定" />
+    </LinearLayout>
+</ScrollView>

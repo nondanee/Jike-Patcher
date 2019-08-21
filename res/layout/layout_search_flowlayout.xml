@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lay_container" android:paddingTop="@dimen/jike_list_common_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/jike_list_common_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/jike_text_medium_gray" android:id="@id/tv_suggestion_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_search_title" />
+    <com.ruguoapp.jike.widget.view.FlowLayout android:id="@id/lay_container_suggestion" android:paddingBottom="10.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:paddingEnd="5.0dip" app:fl_horizontal_margin="10.0dip" app:fl_vertical_margin="10.0dip" />
+    <FrameLayout android:id="@id/lay_search_history" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:paddingEnd="@dimen/jike_list_common_padding">
+        <TextView android:textColor="@color/jike_text_medium_gray" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_history" />
+        <ImageView android:layout_gravity="center|right" android:id="@id/iv_close" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_close_black_rounded" />
+    </FrameLayout>
+    <com.ruguoapp.jike.widget.view.FlowLayout android:id="@id/lay_container_history" android:paddingBottom="10.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="5.0dip" app:fl_horizontal_margin="10.0dip" app:fl_max_lines="2" app:fl_vertical_margin="10.0dip" />
+</LinearLayout>

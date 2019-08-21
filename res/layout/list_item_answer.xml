@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualRelativeLayout android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" layout="@layout/list_item_ugc_author" />
+        <include android:id="@id/lay_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:layout_marginStart="@dimen/list_item_personal_update_content_margin_left" android:layout_marginEnd="@dimen/jike_list_common_margin" layout="@layout/layout_answer_content" />
+        <View android:id="@id/answer_divider" android:visibility="gone" android:layout_marginTop="@dimen/jike_list_common_margin" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="@dimen/jike_list_common_margin" style="@style/Divider" />
+        <com.ruguoapp.jike.view.widget.action.ActionLayoutStub android:id="@id/lay_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginStart="@dimen/list_item_personal_update_action_margin_left" android:layout_marginEnd="5.0dip" app:al_layout="@layout/layout_action_with_vote" />
+        <View android:id="@id/divider_line" android:layout_marginTop="5.0dip" android:layout_marginStart="@dimen/jike_list_common_margin" style="@style/Divider" />
+    </LinearLayout>
+</com.ruguoapp.jike.view.widget.GradualRelativeLayout>

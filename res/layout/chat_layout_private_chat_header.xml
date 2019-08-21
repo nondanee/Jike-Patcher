@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ruguoapp.jike.business.chat.ui.widget.ChatFloatingBar android:id="@id/floatingUserInfo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ruguoapp.jike.business.chat.ui.widget.ChatFloatingBar android:id="@id/floatingFollowReminder" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View style="@style/Divider" />
+</LinearLayout>

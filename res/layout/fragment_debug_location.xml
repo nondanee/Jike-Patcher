@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/jike_list_padding_15" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="本设置提供自定义经纬度，退出应用后失效" />
+    <EditText android:id="@id/edit_latitude" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_margin_15" android:hint="输入纬度（-90~90）" android:inputType="numberDecimal" />
+    <EditText android:id="@id/edit_longitude" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_margin_15" android:hint="输入经度（-180~180）" android:inputType="numberDecimal" />
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="坐标系" />
+    <RadioGroup android:id="@id/rg_type" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <RadioButton android:id="@id/rb_gcj" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" />
+        <RadioButton android:id="@id/rb_wgs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    </RadioGroup>
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="预选城市" />
+    <Spinner android:id="@id/sp_cities" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:spinnerMode="dialog" />
+</LinearLayout>

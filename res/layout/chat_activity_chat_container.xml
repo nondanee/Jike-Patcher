@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layRootContainer" android:background="@color/jike_very_light_gray_fa" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/layHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize" app:layout_constraintTop_toTopOf="parent" />
+    <FrameLayout android:id="@id/layListContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toTopOf="@id/layAction" app:layout_constraintTop_toBottomOf="@id/layHeader" />
+    <FrameLayout android:id="@id/layFloatingHeader" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toTopOf="@id/layListContainer" />
+    <FrameLayout android:id="@id/layAction" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/layListContainer" />
+    <include layout="@layout/layout_appbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

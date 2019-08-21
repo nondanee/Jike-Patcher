@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_back" android:src="@drawable/ic_navbar_close" style="@style/Login.BackButton" />
+        <TextView android:id="@id/tv_title" android:text="@string/safety_verification" style="@style/Login.Title" />
+        <TextView android:id="@id/tv_subtitle" android:text="@string/safety_verification_tip" style="@style/Login.Subtitle" />
+        <TextView android:id="@id/tv_phone" style="@style/Login.Title" />
+        <TextView android:layout_gravity="center_horizontal" android:id="@id/tv_action" android:layout_marginTop="20.0dip" android:layout_marginBottom="15.0dip" android:text="@string/login_get_code" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="@dimen/jike_list_common_margin" style="@style/Login.ActionButton" />
+        <TextView android:id="@id/tv_phone_not_use" android:text="该手机号已无法使用" style="@style/Login.State" />
+    </LinearLayout>
+</RelativeLayout>

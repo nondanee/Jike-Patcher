@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.widget.view.RatioRelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:rrl_ratio="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.view.widget.GradualRelativeLayout android:id="@id/lay_click" android:layout_width="fill_parent" android:layout_height="fill_parent" app:mask_radius="4.0dip">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <com.ruguoapp.jike.widget.view.badge.BadgeImageView android:id="@id/iv_avatar" android:layout_width="45.0dip" android:layout_height="45.0dip" />
+            <TextView android:textSize="@dimen/text_12" android:textColor="@color/text_dark_gray" android:gravity="center" android:id="@id/tv_add_story" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:minWidth="72.0dip" android:minHeight="28.0dip" android:text="发日记" />
+        </LinearLayout>
+    </com.ruguoapp.jike.view.widget.GradualRelativeLayout>
+</com.ruguoapp.jike.widget.view.RatioRelativeLayout>

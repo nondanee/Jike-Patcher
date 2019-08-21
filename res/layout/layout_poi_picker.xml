@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.view.widget.GradualRelativeLayout android:id="@id/lay_selected_poi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="11.0dip" android:layout_marginEnd="6.0dip" app:mask_radius="100.0dip" app:mask_view="@id/tv_poi">
+        <View android:id="@id/poi_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/tv_poi" android:layout_alignBottom="@id/tv_poi" android:layout_alignStart="@id/tv_poi" android:layout_alignEnd="@id/tv_poi" />
+        <TextView android:textSize="@dimen/text_11" android:ellipsize="end" android:id="@id/tv_poi" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:maxLines="1" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+    </com.ruguoapp.jike.view.widget.GradualRelativeLayout>
+    <RelativeLayout android:id="@id/lay_recommend_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <View android:id="@id/divider" android:background="@color/jike_divider_gray" android:layout_width="@dimen/divider_size_thin" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignTop="@id/lay_container" android:layout_alignBottom="@id/lay_container" />
+    </RelativeLayout>
+</LinearLayout>

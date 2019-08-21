@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/white" android:layout_gravity="start|center" android:id="@id/tvVisibility" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_marginBottom="6.0dip" android:text="@string/story_visibility_public" android:layout_marginStart="12.0dip" android:layout_marginEnd="30.0dip" />
+    <ImageView android:layout_gravity="end|center" android:layout_width="10.0dip" android:layout_height="14.0dip" android:src="@drawable/ic_common_arrow_down" android:tint="@color/white" android:layout_marginEnd="12.0dip" />
+</FrameLayout>

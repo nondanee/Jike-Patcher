@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivIllustration" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:background="@drawable/shadow_transparent_black_alpha_50" android:layout_width="fill_parent" android:layout_height="34.0dip">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:maxLines="1" android:layout_marginStart="10.0dip" />
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualLinearLayout android:orientation="vertical" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="44.0dip">
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_dark_gray" android:layout_gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <View style="@style/Divider" />
+</com.ruguoapp.jike.view.widget.GradualLinearLayout>

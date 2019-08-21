@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@id/lay_app_bar" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" />
+    <ImageView android:id="@id/iv_toolbar_shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" android:src="@drawable/shadow_appbar" />
+</com.google.android.material.appbar.AppBarLayout>

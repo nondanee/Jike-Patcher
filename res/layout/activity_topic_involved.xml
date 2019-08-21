@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginEnd="?actionBarSize">
+                <com.google.android.material.tabs.TabLayout android:id="@id/tab" android:layout_width="fill_parent" android:layout_height="fill_parent" app:tabGravity="fill" app:tabIndicatorHeight="0.0dip" app:tabMode="fixed" app:tabPaddingEnd="0.0dip" app:tabPaddingStart="0.0dip" app:tabSelectedTextColor="@color/jike_text_dark_gray" app:tabTextAppearance="@style/TopicInvolvedTabTextAppearance" app:tabTextColor="@color/jike_text_medium_gray" />
+                <View android:layout_gravity="bottom" android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@id/layContainer" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.ruguoapp.jike.widget.view.BallPulseView android:id="@id/loadingView" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.ruguoapp.jike.view.widget.RgViewPager android:id="@id/view_pager" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

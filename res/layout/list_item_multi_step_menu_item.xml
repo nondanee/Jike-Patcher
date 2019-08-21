@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/jike_list_common_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingTop="@dimen/jike_list_common_padding" android:paddingBottom="@dimen/jike_list_common_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_icon" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/iv_right_arrow" android:layout_toEndOf="@id/iv_icon">
+            <TextView android:textSize="@dimen/text_15" android:textColor="@color/jike_text_dark_gray" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawablePadding="10.0dip" />
+            <TextView android:textSize="@dimen/text_11" android:textColor="@color/jike_text_medium_gray" android:ellipsize="end" android:id="@id/tv_hint" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_right_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/jike_list_common_padding" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/divider" style="@style/Divider" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.PopularUgcFollowView android:textSize="@dimen/text_14" android:id="@id/df_following" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

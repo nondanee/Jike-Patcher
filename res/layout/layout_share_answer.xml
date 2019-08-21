@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lay_share_answer" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginStart="25.0dip" android:layout_marginEnd="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_share_slashes" />
+    <ImageView android:id="@id/iv_answer_pic" android:layout_width="fill_parent" android:layout_height="180.0dip" android:layout_marginBottom="@dimen/jike_list_common_margin" android:scaleType="centerCrop" />
+    <TextView android:textSize="@dimen/text_16" android:textColor="@color/black" android:id="@id/tv_answer_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="30" android:lineSpacingExtra="@dimen/line_spacing_text_16" />
+</LinearLayout>

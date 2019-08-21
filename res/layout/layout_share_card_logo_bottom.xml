@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/background_gray" android:paddingTop="17.0dip" android:paddingBottom="17.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_share_activity" />
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/text_dark_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/slogan_with_jike" android:layout_marginStart="6.0dip" />
+    </LinearLayout>
+</merge>

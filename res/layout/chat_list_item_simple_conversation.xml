@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualLinearLayout android:orientation="vertical" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/gradual_mask" android:padding="@dimen/jike_list_common_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.ruguoapp.jike.widget.view.badge.BadgeImageView android:id="@id/iv_avatar" android:layout_width="@dimen/chat_conversation_avatar_size_with_padding" android:layout_height="@dimen/chat_conversation_avatar_size" android:paddingEnd="10.0dip" />
+        <com.ruguoapp.jike.business.chat.ui.widget.GroupChatAvatarView android:id="@id/group_avatar" android:visibility="gone" android:layout_width="44.0dip" android:layout_height="44.0dip" android:layout_marginEnd="10.0dip" />
+        <TextView android:ellipsize="end" android:id="@id/tv_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/JikeList.Main" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:visibility="gone" android:layout_marginStart="@dimen/jike_list_common_margin" style="@style/Divider" />
+</com.ruguoapp.jike.view.widget.GradualLinearLayout>

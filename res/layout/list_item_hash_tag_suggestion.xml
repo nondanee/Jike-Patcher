@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualLinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="44.0dip" android:paddingStart="@dimen/jike_list_common_padding" android:paddingEnd="@dimen/jike_list_common_padding">
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/blue" android:id="@id/tvContent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" app:layout_constrainedWidth="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.0" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <View app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" style="@style/Divider" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.ruguoapp.jike.view.widget.GradualLinearLayout>

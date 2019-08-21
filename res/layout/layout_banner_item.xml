@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualRelativeLayout android:id="@id/lay_gradual" android:layout_width="fill_parent" android:layout_height="fill_parent" app:mask_color="@color/image_gradual_mask" app:mask_radius="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/iv_close" android:padding="9.0dip" android:visibility="gone" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/ic_common_close_black_rounded" android:layout_alignParentEnd="true" />
+</com.ruguoapp.jike.view.widget.GradualRelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="120" android:drawable="@drawable/illustration_tag_delete_animation_sprite_0" />
+    <item android:duration="120" android:drawable="@drawable/illustration_tag_delete_animation_sprite_1" />
+    <item android:duration="120" android:drawable="@drawable/illustration_tag_delete_animation_sprite_2" />
+    <item android:duration="120" android:drawable="@drawable/illustration_tag_delete_animation_sprite_3" />
+    <item android:duration="120" android:drawable="@drawable/illustration_tag_delete_animation_sprite_4" />
+</animation-list>

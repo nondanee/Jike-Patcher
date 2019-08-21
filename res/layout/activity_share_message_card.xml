@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lay_container" android:background="@color/text_dark_gray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/lay_snapshot" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/layout_share_message_card_pic" />
+                <include layout="@layout/layout_share_message_card_no_pic" />
+                <include layout="@layout/layout_share_message_card_qr_code" />
+                <include layout="@layout/layout_share_card_logo_bottom" />
+            </LinearLayout>
+        </ScrollView>
+        <include layout="@layout/layout_share_card_bottom_menu" />
+    </LinearLayout>
+    <include layout="@layout/layout_appbar_black" />
+</RelativeLayout>

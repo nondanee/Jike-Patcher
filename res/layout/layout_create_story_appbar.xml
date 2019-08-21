@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/storyBar" android:background="@color/black" android:layout_width="fill_parent" android:layout_height="?actionBarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/ivBack" android:layout_width="?actionBarSize" android:layout_height="?actionBarSize" android:src="@drawable/ic_navbar_back" android:scaleType="center" android:tint="@color/white" />
+    <TextView android:textSize="@dimen/text_15" android:textColor="@color/white" android:layout_gravity="start|center" android:id="@id/tvEditCancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="取消" android:layout_marginStart="20.0dip" />
+    <TextView android:textSize="@dimen/text_15" android:textColor="@color/white" android:layout_gravity="end|center" android:id="@id/tvEditFinish" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="完成" android:layout_marginEnd="20.0dip" />
+</FrameLayout>

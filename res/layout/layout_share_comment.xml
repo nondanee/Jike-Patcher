@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_marginBottom="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_comment_card_share" />
+    <TextView android:textSize="@dimen/text_18" android:textColor="@color/text_dark_gray" android:ellipsize="end" android:id="@id/tv_comment_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:maxLines="30" android:lineSpacingExtra="@dimen/line_spacing_text_18" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/lay_reply_comment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <View android:background="@color/divider_gray" android:layout_width="4.0dip" android:layout_height="20.0dip" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/text_light_gray" android:ellipsize="end" android:id="@id/tv_reply_comment_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:lineSpacingExtra="@dimen/line_spacing_text_14" android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+    <com.ruguoapp.jike.widget.view.CropImageView android:id="@id/iv_comment_pic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:dim_color="@color/image_color_filter_02" />
+</LinearLayout>

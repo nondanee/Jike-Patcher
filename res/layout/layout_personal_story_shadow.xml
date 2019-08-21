@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center_vertical" android:id="@id/shadow_big" android:layout_width="6.0dip" android:layout_height="88.0dip" />
+    <View android:layout_gravity="center_vertical" android:id="@id/shadow_small" android:layout_width="6.0dip" android:layout_height="74.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+</merge>

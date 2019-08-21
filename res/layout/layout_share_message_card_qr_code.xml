@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:layout_marginBottom="@dimen/share_qr_code_margin" android:layout_marginStart="@dimen/share_qr_code_margin">
+        <ImageView android:id="@id/iv_qr_code" android:layout_width="@dimen/share_qr_code_size" android:layout_height="@dimen/share_qr_code_size" android:layout_marginEnd="10.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/text_12" android:textStyle="bold" android:textColor="@color/text_light_gray" android:ellipsize="end" android:id="@id/tv_qr_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="长按二维码查看详情" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_12" android:textStyle="bold" android:textColor="@color/text_light_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/share_via_jike" android:drawableLeft="@drawable/ic_share_card_jike_logo" android:drawablePadding="5.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

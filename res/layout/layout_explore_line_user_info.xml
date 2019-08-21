@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/lay_user_info" android:layout_width="fill_parent" android:layout_height="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.widget.view.badge.BadgeImageView android:id="@id/iv_avatar" android:layout_width="50.0dip" android:layout_height="40.0dip" android:paddingEnd="10.0dip" android:layout_marginStart="@dimen/jike_list_common_margin" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/white" android:id="@id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toEndOf="@id/iv_avatar" app:layout_constraintTop_toTopOf="@id/iv_avatar" />
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/white_ar60" android:id="@id/tv_time" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="@id/tv_username" app:layout_constraintTop_toBottomOf="@id/tv_username" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="@dimen/jike_list_common_margin" app:layout_constraintBottom_toBottomOf="@id/iv_avatar" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="1.0" app:layout_constraintStart_toEndOf="@id/tv_username" app:layout_constraintTop_toTopOf="@id/iv_avatar">
+        <com.ruguoapp.jike.business.personalupdate.create.ui.widget.TopicTagLayout android:layout_gravity="end" android:id="@id/lay_topic_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" app:topic_tag_bg_color="@color/white_ar15" app:topic_tag_text_color="@color/white" />
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

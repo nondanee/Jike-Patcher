@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.view.widget.TriangleView android:id="@id/view_triangleView" android:layout_width="14.0dip" android:layout_height="8.0dip" android:layout_marginEnd="36.0dip" android:layout_alignParentEnd="true" app:trv_color="@color/black_ar40" />
+    <RelativeLayout android:id="@id/lay_title" android:background="@color/black_ar40" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/view_triangleView">
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/white_ar60" android:id="@id/tv_recommend_title" android:padding="@dimen/jike_list_padding_15" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/more_view" android:padding="@dimen/jike_list_padding_15" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/ic_navbar_close" android:tint="@color/white_ar60" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.ruguoapp.jike.view.widget.HorizontalOverScrollLayout android:id="@id/lay_rv_container" android:background="@color/black_ar40" android:paddingBottom="@dimen/jike_list_common_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/horizontal_feed_item_height_small" android:layout_below="@id/lay_title" />
+</RelativeLayout>

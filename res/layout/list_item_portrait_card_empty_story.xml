@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="110.0dip" android:layout_height="100.0dip" android:layout_margin="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ruguoapp.jike.widget.view.DimImageView android:id="@id/iv_background" android:layout_width="96.0dip" android:layout_height="96.0dip" app:dim_color="@color/image_color_filter_30" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <ImageView android:id="@id/iv_icon" android:layout_width="26.0dip" android:layout_height="26.0dip" android:src="@drawable/ic_personaltab_activity_take_photo" app:disable_shadow="true" app:layout_constraintBottom_toTopOf="@id/tv_title" app:layout_constraintEnd_toEndOf="@id/iv_background" app:layout_constraintStart_toStartOf="@id/iv_background" app:layout_constraintTop_toTopOf="@id/iv_background" app:layout_constraintVertical_chainStyle="packed" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/white" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="添加日记" app:layout_constraintBottom_toBottomOf="@id/iv_background" app:layout_constraintEnd_toEndOf="@id/iv_background" app:layout_constraintStart_toStartOf="@id/iv_background" app:layout_constraintTop_toBottomOf="@id/iv_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/layout_personal_story_shadow" />
+</LinearLayout>

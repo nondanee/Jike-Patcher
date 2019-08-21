@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.business.personalupdate.create.ui.widget.CreatePersonalUpdateLayout android:id="@id/lay_create_personal_update" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize" app:cpu_bar_option="@layout/layout_repost_option" app:cpu_extra_layout="@layout/layout_repost_message_extra" />
+    <include layout="@layout/layout_appbar" />
+</FrameLayout>

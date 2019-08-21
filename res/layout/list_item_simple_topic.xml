@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualLinearLayout android:orientation="vertical" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/jike_list_common_padding" android:paddingEnd="@dimen/jike_list_common_padding">
+        <include layout="@layout/list_item_topic_header" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <View android:layout_marginStart="@dimen/jike_list_common_margin" style="@style/Divider" />
+</com.ruguoapp.jike.view.widget.GradualLinearLayout>

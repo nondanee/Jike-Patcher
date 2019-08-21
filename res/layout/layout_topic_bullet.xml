@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_layout_bullet_topic" android:layout_width="fill_parent" android:layout_height="26.0dip" android:paddingEnd="@dimen/jike_list_common_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ruguoapp.jike.widget.view.badge.BadgeImageView android:id="@id/iv_pic" android:layout_width="30.0dip" android:layout_height="20.0dip" android:paddingEnd="10.0dip" android:layout_marginStart="3.0dip" />
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="-5.0dip" />
+</LinearLayout>

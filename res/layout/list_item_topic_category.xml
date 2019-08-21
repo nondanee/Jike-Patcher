@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/jike_background_gray" android:layout_width="80.0dip" android:layout_height="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_dark_gray" android:ellipsize="end" android:layout_gravity="center" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+</FrameLayout>

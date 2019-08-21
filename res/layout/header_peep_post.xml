@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="fill_parent" app:alignItems="center" app:justifyContent="space_between"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_back" android:background="@null" android:layout_width="?actionBarSize" android:layout_height="?actionBarSize" android:src="@drawable/ic_navbar_back" android:scaleType="center" android:tint="@color/white" app:layout_flexShrink="0.0" style="?actionBarItemBackground" />
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="5.0dip" android:layout_marginEnd="15.0dip" app:layout_flexShrink="1.0">
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/light_grayish_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在窥探：" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_screen_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+    </LinearLayout>
+    <com.ruguoapp.jike.view.widget.FollowButton android:id="@id/btn_follow" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_marginEnd="@dimen/jike_list_common_margin" app:fb_bg_color_followed="@color/very_soft_blue_a8" app:fb_bg_color_not_follow="@color/white" app:fb_text_color_followed="@color/light_grayish_blue_dc" app:fb_text_color_not_follow="@color/jike_blue" app:layout_flexShrink="0.0" />
+</com.google.android.flexbox.FlexboxLayout>

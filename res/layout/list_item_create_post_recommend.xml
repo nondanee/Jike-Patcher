@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualRelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" app:mask_radius="100.0dip" app:mask_view="@id/text_view"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@id/text_view" android:layout_alignBottom="@id/text_view" android:layout_alignStart="@id/text_view" android:layout_alignEnd="@id/text_view" />
+    <TextView android:textSize="@dimen/text_11" android:textColor="@color/jike_text_medium_gray" android:id="@id/text_view" android:paddingTop="4.0dip" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip" />
+</com.ruguoapp.jike.view.widget.GradualRelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.InterceptConstraintLayout android:id="@id/lay_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_bottom_popup_title_list" />
+    <com.ruguoapp.jike.view.widget.input.InputLayout android:id="@id/lay_input" android:layout_width="fill_parent" android:layout_height="wrap_content" app:input_enable_shadow="true" app:input_enable_size_limit="true" app:input_option_layout="@layout/layout_comment_input_sync_personal_update" app:layout_constrainedHeight="true" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/divider" app:layout_constraintVertical_bias="1.0" />
+</com.ruguoapp.jike.view.widget.InterceptConstraintLayout>

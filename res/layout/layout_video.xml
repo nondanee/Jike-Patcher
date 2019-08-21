@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/lay_video_simple" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ruguoapp.jike.widget.view.scrollparallax.ScrollParallaxImageView android:id="@id/iv_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" app:dim_color="@color/image_color_filter_30" />
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/white" android:layout_gravity="bottom|center|right" android:id="@id/tv_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_marginEnd="10.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_mediaplayer_videoplayer_feedplay" />
+        <com.ruguoapp.jike.video.ui.widget.VideoAutoPlayLayout android:id="@id/lay_auto_play_video" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/lay_video_link_info" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="68.0dip">
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_medium_gray" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="@dimen/jike_list_common_margin" />
+    </LinearLayout>
+</LinearLayout>

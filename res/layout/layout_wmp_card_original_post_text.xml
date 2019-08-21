@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/lay_user" layout="@layout/layout_wmp_card_post_large_header" />
+    <com.ruguoapp.jike.business.personalupdate.create.ui.widget.TopicTagLayout android:id="@id/lay_topic_tag" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentBottom="true" app:topic_tag_disable_bg="true" app:topic_tag_icon_size="14.0dip" />
+    <TextView android:textSize="@dimen/text_15" android:textColor="@color/text_dark_gray" android:ellipsize="end" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:maxLines="3" android:layout_above="@id/lay_topic_tag" android:layout_below="@id/lay_user" android:lineSpacingExtra="@dimen/line_spacing_text_15" />
+</RelativeLayout>

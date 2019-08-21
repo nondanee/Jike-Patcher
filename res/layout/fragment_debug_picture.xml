@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.view.widget.grid.GridPicLayout android:id="@id/lay_pic_grid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/jike_list_common_margin" />
+    <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_debug" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" app:mask_enable="false" app:settings_show_divider="false" app:settings_show_switch="true" app:settings_title="@string/activity_debug_picture" />
+</LinearLayout>

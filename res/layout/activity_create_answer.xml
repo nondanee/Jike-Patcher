@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/lay_container" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/recycler_view" android:paddingTop="@dimen/jike_list_common_padding" android:paddingBottom="112.0dip" android:clipToPadding="false" android:descendantFocusability="beforeDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        <RelativeLayout android:id="@id/lay_send" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="@dimen/create_personal_update_send_height" android:layout_alignParentBottom="true">
+            <View style="@style/Divider" />
+            <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/jike_list_common_margin" android:layout_alignParentEnd="true" layout="@layout/layout_comment_input_sync_personal_update" />
+            <ImageButton android:id="@id/btn_add_pic" android:background="?selectableItemBackgroundBorderless" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_personaltab_activity_add_pic" android:tint="@color/jike_blue" android:layout_centerVertical="true" android:layout_marginStart="14.0dip" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include layout="@layout/layout_appbar_right_text" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ruguoapp.jike.view.widget.GradualRelativeLayout android:id="@id/layHeyContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <ImageView android:src="@drawable/ic_chat_emoji" style="@style/Chat.Input.IconImage" />
+            <Space android:layout_width="10.0dip" android:layout_height="0.0dip" />
+            <TextView android:textSize="@dimen/text_16" android:textColor="@color/jike_text_dark_gray" android:gravity="center" android:layout_width="wrap_content" android:layout_height="56.0dip" android:text="@string/chat_say_hey" />
+            <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </com.ruguoapp.jike.view.widget.GradualRelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layStickerContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_dark_gray" android:gravity="center" android:id="@id/tvCancel" android:layout_width="wrap_content" android:layout_height="36.0dip" android:text="@string/cancel" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" />
+        <com.ruguoapp.jike.business.chat.ui.widget.StickerLayout android:id="@id/laySticker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+</merge>

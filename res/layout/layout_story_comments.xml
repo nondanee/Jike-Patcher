@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/jike_list_common_padding" android:paddingEnd="@dimen/jike_list_common_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ruguoapp.jike.widget.view.slicetext.SliceTextView android:textSize="@dimen/text_13" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tvFirstComment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" />
+    <com.ruguoapp.jike.widget.view.slicetext.SliceTextView android:textSize="@dimen/text_13" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tvSecondComment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" />
+    <TextView android:textSize="@dimen/text_13" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tvThirdComment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" />
+</LinearLayout>

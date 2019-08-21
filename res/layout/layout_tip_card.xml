@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:padding="@dimen/jike_list_common_padding" android:layout_width="fill_parent" android:layout_height="100.0dip">
+        <ImageView android:id="@id/iv_pic" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="fitXY" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignTop="@id/iv_pic" android:layout_alignBottom="@id/iv_pic" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/iv_pic">
+            <TextView android:textSize="@dimen/text_18" android:textColor="@color/jike_text_dark_gray" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_medium_gray" android:ellipsize="end" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="2" />
+        </LinearLayout>
+        <ImageView android:id="@id/iv_close" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_close_gray" android:paddingStart="5.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View style="@style/Divider" />
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_dark_blue" android:gravity="center" android:id="@id/tv_button" android:layout_width="fill_parent" android:layout_height="44.0dip" />
+</LinearLayout>

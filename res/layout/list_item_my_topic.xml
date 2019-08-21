@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualLinearLayout android:orientation="vertical" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="74.0dip" android:paddingStart="@dimen/jike_list_common_padding" android:paddingEnd="7.0dip">
+        <com.ruguoapp.jike.widget.view.DimImageView android:id="@id/iv_topic_pic" android:layout_width="@dimen/jike_list_avatar_size" android:layout_height="@dimen/jike_list_avatar_size" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" app:dim_color="@color/image_color_filter_02" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="16.0dip" android:layout_toEndOf="@id/iv_topic_pic">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <TextView android:ellipsize="end" android:id="@id/tv_topic_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" style="@style/JikeList.Main" />
+                <TextView android:ellipsize="end" android:id="@id/tv_sub_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:maxLines="1" style="@style/JikeList.Sub" />
+            </LinearLayout>
+            <ImageView android:id="@id/iv_topic_subscribe_more" android:background="@drawable/bg_common_btn" android:paddingTop="@dimen/jike_list_common_padding" android:paddingBottom="@dimen/jike_list_common_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_horiz_white_24dp" android:tint="@color/jike_text_light_gray" android:paddingStart="8.0dip" android:paddingEnd="8.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:layout_marginStart="@dimen/jike_list_common_margin" style="@style/Divider" />
+</com.ruguoapp.jike.view.widget.GradualLinearLayout>

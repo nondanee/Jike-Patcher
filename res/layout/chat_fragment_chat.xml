@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ruguoapp.jike.business.chat.ui.messagelist.ChatRecyclerView android:id="@id/chatRV" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ruguoapp.jike.business.chat.ui.widget.ChatLastReadIndicatorView android:textColor="@color/jike_blue" android:gravity="center" android:layout_gravity="end" android:id="@id/lastReadIndicator" android:background="@drawable/chat_bg_last_read_indicator" android:layout_width="120.0dip" android:layout_height="36.0dip" android:layout_marginTop="20.0dip" android:drawableLeft="@drawable/ic_chat_back_history" android:translationX="120.0dip" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" android:layout_marginEnd="-0.5dip" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+    <FrameLayout android:id="@id/letter_bar_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentEnd="true">
+        <com.ruguoapp.jike.view.widget.LetterLocationBar android:id="@id/letter_location_bar" android:layout_width="16.0dip" android:layout_height="fill_parent" android:layout_marginEnd="5.0dip" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_70" android:id="@id/tv_selected" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+</RelativeLayout>

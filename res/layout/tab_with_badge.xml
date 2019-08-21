@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ruguoapp.jike.view.widget.TabTextView android:textSize="@dimen/text_14" android:textColor="@color/home_tab_title_color" android:gravity="center_horizontal" android:id="@id/tv_tab_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" />
+    <View android:id="@id/tab_badge" android:background="@drawable/ic_badge" android:visibility="invisible" android:layout_width="9.0dip" android:layout_height="9.0dip" android:layout_marginTop="-4.5dip" android:layout_alignTop="@id/tv_tab_title" android:layout_marginEnd="-4.5dip" android:layout_alignEnd="@id/tv_tab_title" />
+</RelativeLayout>

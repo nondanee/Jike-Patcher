@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ruguoapp.jike.business.main.explore.widget.ExplorePullLayout android:id="@id/pull_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/lay_error" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ruguoapp.jike.widget.view.BallPulseView android:layout_gravity="center" android:id="@id/ball_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</FrameLayout>

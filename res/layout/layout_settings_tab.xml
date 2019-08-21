@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/lay_settings" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="@dimen/settings_tab_height">
+        <RelativeLayout android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/jike_list_common_padding">
+            <ImageView android:id="@id/iv_settings_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/settings_text_size" android:textColor="@color/jike_text_dark_gray" android:id="@id/tv_settings_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toEndOf="@id/iv_settings_icon" />
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_medium_gray" android:gravity="right" android:id="@id/tv_settings_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10.0dip" android:layout_marginEnd="@dimen/jike_list_common_margin" android:layout_toEndOf="@id/tv_settings_title" />
+            <androidx.appcompat.widget.SwitchCompat android:id="@id/sw_settings" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/jike_list_common_margin" android:layout_alignParentEnd="true" app:theme="@style/Switch" />
+            <View android:id="@id/divider" android:visibility="gone" android:layout_alignParentBottom="true" android:layout_alignStart="@id/tv_settings_title" style="@style/Divider" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/jike_text_medium_gray" android:id="@id/tv_settings_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/lay_settings" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="20.0dip" />
+</RelativeLayout>

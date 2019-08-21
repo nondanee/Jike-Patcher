@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@mipmap/rectangle" android:layout_width="200.0dip" android:layout_height="200.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_loading" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="40.0dip" android:layout_centerHorizontal="true" />
+    <TextView android:textSize="15.0sp" android:gravity="center" android:id="@id/tv_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="24.0dip" android:layout_marginRight="12.0dip" android:text="@string/tip_loading" android:layout_below="@id/iv_loading" android:layout_centerHorizontal="true" />
+</RelativeLayout>

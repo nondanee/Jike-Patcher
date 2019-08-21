@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:background="@color/very_light_gray_fa" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_avatar" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/text_dark_gray" android:ellipsize="end" android:id="@id/tv_screen_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="5.0dip" />
+</LinearLayout>

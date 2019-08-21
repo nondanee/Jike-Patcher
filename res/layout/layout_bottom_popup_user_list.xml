@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.InterceptConstraintLayout android:id="@id/lay_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_bottom_popup_title_list" />
+</com.ruguoapp.jike.view.widget.InterceptConstraintLayout>

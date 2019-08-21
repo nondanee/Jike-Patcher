@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.nestedscroll.NestedCoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.view.widget.RgViewPager android:id="@id/view_pager" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-4.5dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    <com.ruguoapp.jike.view.widget.nestedscroll.NestedAppBarLayout android:id="@id/lay_app_bar" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/lay_collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="exitUntilCollapsed|scroll" app:titleEnabled="false">
+            <com.ruguoapp.jike.business.personal.widget.PersonalHeaderBackgroundLayout android:id="@id/lay_header_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_collapseMode="parallax" app:layout_collapseParallaxMultiplier="0.5" />
+            <com.ruguoapp.jike.business.personal.widget.PersonalHeaderView android:id="@id/lay_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <FrameLayout android:id="@id/lay_tab" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip">
+            <com.google.android.material.tabs.TabLayout android:id="@id/tab" android:layout_width="fill_parent" android:layout_height="44.0dip" app:tabIndicator="@drawable/tab_home_indicator" app:tabIndicatorColor="@color/jike_yellow" app:tabMinWidth="0.0dip" app:tabMode="scrollable" app:tabPaddingEnd="0.0dip" app:tabPaddingStart="0.0dip" />
+        </FrameLayout>
+        <ImageView android:id="@id/iv_toolbar_shadow" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="4.0dip" android:src="@drawable/shadow_appbar" />
+        <FrameLayout android:id="@id/lay_status_container" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-4.0dip">
+            <include android:id="@id/lay_loading" layout="@layout/layout_ball_loading_auto" />
+        </FrameLayout>
+    </com.ruguoapp.jike.view.widget.nestedscroll.NestedAppBarLayout>
+    <com.ruguoapp.jike.business.personal.widget.PersonalToolbarBgImageView android:id="@id/iv_toolbar_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scaleType="centerCrop" />
+    <com.ruguoapp.jike.business.personal.widget.PersonalActionBarLayout android:id="@id/lay_personal_action_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.ruguoapp.jike.view.widget.nestedscroll.NestedCoordinatorLayout>

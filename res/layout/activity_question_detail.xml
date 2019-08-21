@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <com.ruguoapp.jike.view.widget.refresh.PullRefreshLayout android:id="@id/lay_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/question_detail_bottom_height" android:layout_alignParentBottom="true" layout="@layout/layout_question_detail_bottom" />
+    </RelativeLayout>
+    <include layout="@layout/layout_appbar" />
+</RelativeLayout>

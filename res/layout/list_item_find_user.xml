@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.view.widget.GradualLinearLayout android:orientation="vertical" android:id="@id/lay_content" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/gradual_mask" android:paddingTop="@dimen/jike_list_padding_15" android:paddingBottom="@dimen/jike_list_padding_15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/jike_list_padding_15" android:paddingEnd="8.0dip">
+            <com.ruguoapp.jike.widget.view.badge.BadgeImageView android:id="@id/iv_avatar" android:layout_width="54.0dip" android:layout_height="44.0dip" android:paddingEnd="10.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="10.0dip" android:layout_toStartOf="@id/lay_follow" android:layout_toEndOf="@id/iv_avatar">
+                <com.ruguoapp.jike.widget.view.slicetext.SliceTextView android:textSize="@dimen/text_16" android:textColor="@color/jike_text_dark_gray" android:ellipsize="end" android:id="@id/tv_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                <TextView android:textSize="@dimen/text_12" android:textColor="@color/jike_text_medium_gray" android:ellipsize="end" android:id="@id/tv_bio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/lay_follow" android:layout_width="96.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:id="@id/iv_close" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_close_gray" android:layout_centerVertical="true" android:paddingStart="8.0dip" android:paddingEnd="7.0dip" android:layout_alignParentEnd="true" />
+                <com.ruguoapp.jike.view.widget.FollowButton android:id="@id/btn_follow" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginEnd="38.0dip" app:fb_disable_feedback="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View style="@style/Divider" />
+    </com.ruguoapp.jike.view.widget.GradualLinearLayout>
+</LinearLayout>

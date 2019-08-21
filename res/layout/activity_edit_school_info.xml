@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/jike_background_white" android:paddingLeft="@dimen/jike_list_padding_15" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="12.0dip">
+            <ImageView android:id="@id/iv_search_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_navbar_search" />
+            <EditText android:textSize="@dimen/text_16" android:textColor="@color/jike_text_dark_gray" android:textColorHint="@color/jike_text_light_gray" android:id="@id/et_input_field" android:background="@null" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:hint="@string/search_hint_tab" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionSearch" />
+            <FrameLayout android:id="@id/lay_right_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ProgressBar android:layout_gravity="center" android:id="@id/progress_bar_searching" android:visibility="invisible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminate="true" style="?android:progressBarStyleSmall" />
+                <ImageView android:id="@id/iv_clear_query" android:padding="15.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_close_black_rounded" />
+            </FrameLayout>
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/divider_size_thin" android:overScrollMode="never" />
+    </LinearLayout>
+    <include layout="@layout/layout_appbar_right_text" />
+</RelativeLayout>

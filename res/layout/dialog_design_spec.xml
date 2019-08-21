@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/JikeDialog.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ruguoapp.jike.widget.view.RatioImageView android:id="@id/riv_pic" style="@style/JikeDialog.Picture" />
+        <ImageView android:id="@id/iv_close" android:padding="8.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:src="@drawable/ic_common_close_black_rounded_big" android:layout_marginEnd="7.0dip" android:layout_alignEnd="@id/riv_pic" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/lay_design_dialog_info" style="@style/JikeDialog.ContentContainer">
+        <TextView android:id="@id/tv_title" style="@style/JikeDialog.Title" />
+        <TextView android:id="@id/tv_description" style="@style/JikeDialog.Description" />
+        <TextView android:id="@id/tv_ok_button" style="@style/JikeDialog.OkButton" />
+        <TextView android:id="@id/tv_cancel_button" style="@style/JikeDialog.CancelButton" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:padding="@dimen/jike_list_padding_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="44.0dip" android:layout_height="44.0dip" android:src="@drawable/placeholder_default_avatar" />
+        <TextView android:textSize="@dimen/text_16" android:textColor="@color/jike_text_dark_gray" android:ellipsize="end" android:id="@id/tv_contact_name" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" />
+        <TextView android:textSize="@dimen/text_13" android:textColor="@color/text_dark_gray" android:gravity="center" android:id="@id/invite_btn" android:layout_width="80.0dip" android:layout_height="30.0dip" android:text="邀请" />
+    </LinearLayout>
+    <View style="@style/Divider" />
+</LinearLayout>

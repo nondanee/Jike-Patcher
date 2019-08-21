@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualLinearLayout android:orientation="vertical" android:id="@id/lay_involved_user" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_enable="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/gradual_mask" android:paddingTop="@dimen/jike_list_common_padding" android:paddingBottom="@dimen/jike_list_common_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/jike_list_common_padding">
+        <com.ruguoapp.jike.widget.view.badge.BadgeImageView android:id="@id/iv_avatar" android:layout_width="75.0dip" android:layout_height="60.0dip" android:layout_centerVertical="true" android:paddingEnd="15.0dip" />
+        <com.ruguoapp.jike.business.main.ui.topicdetail.involved.InvolvedUserFollowView android:id="@id/btn_involved_follow" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/jike_list_common_margin" android:layout_alignParentEnd="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingEnd="@dimen/jike_list_common_padding" android:layout_toStartOf="@id/btn_involved_follow" android:layout_toEndOf="@id/iv_avatar">
+            <com.ruguoapp.jike.widget.view.slicetext.SliceTextView android:ellipsize="end" android:id="@id/tv_username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/JikeList.Main" />
+            <TextView android:textSize="@dimen/text_12" android:textColor="@color/jike_text_light_gray" android:ellipsize="end" android:id="@id/tv_achievement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" />
+            <TextView android:ellipsize="end" android:id="@id/tv_bio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:singleLine="true" style="@style/JikeList.Sub" />
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/divider" android:layout_marginStart="@dimen/jike_list_common_margin" style="@style/Divider" />
+</com.ruguoapp.jike.view.widget.GradualLinearLayout>

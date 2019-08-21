@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/divider" android:layout_alignBottom="@id/tab" style="@style/Divider" />
+        <com.google.android.material.tabs.TabLayout android:id="@id/tab" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="@dimen/tab_height" app:tabGravity="fill" app:tabIndicatorHeight="1.0dip" app:tabMaxWidth="0.0dip" app:tabMode="fixed" app:tabSelectedTextColor="@color/jike_text_dark_gray" app:tabTextColor="@color/jike_text_light_gray" />
+    </RelativeLayout>
+    <com.ruguoapp.jike.view.widget.RgViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

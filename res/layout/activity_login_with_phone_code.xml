@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_back" android:src="@drawable/ic_navbar_back" android:tint="@color/jike_text_dark_gray" style="@style/Login.BackButton" />
+    <TextView android:text="@string/activity_title_login_with_phone_code" style="@style/Login.Title" />
+    <com.ruguoapp.jike.business.login.widget.PhoneInputView android:layout_gravity="center_horizontal" android:id="@id/phone_input_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" android:layout_marginBottom="@dimen/jike_list_common_margin" />
+    <TextView android:textColor="@color/jike_text_medium_gray" android:layout_gravity="end" android:id="@id/tv_login_with_phone_password" android:layout_marginTop="@dimen/jike_list_common_margin" android:text="使用密码登录" android:layout_marginEnd="@dimen/jike_list_common_margin" style="@style/Login.State" />
+</LinearLayout>

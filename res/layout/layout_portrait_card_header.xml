@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="100.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_icon" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginTop="9.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_13" android:textColor="@color/jike_text_dark_gray" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="2" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_11" android:textColor="@color/jike_text_medium_gray" android:ellipsize="end" android:id="@id/tv_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:maxLines="2" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" app:layout_constraintTop_toBottomOf="@id/tv_title" />
+</merge>

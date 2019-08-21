@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:id="@id/tv_skip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Login.SkipButton" />
+    <ImageView android:id="@id/iv_back" android:src="@drawable/ic_navbar_back" android:tint="@color/jike_text_dark_gray" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Login.BackButton" />
+    <TextView android:id="@id/tv_title" android:layout_marginTop="?actionBarSize" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/Login.Title" />
+    <TextView android:id="@id/tv_subtitle" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_title" style="@style/Login.Subtitle" />
+    <com.ruguoapp.jike.business.login.widget.PhoneCodeLoginView android:layout_gravity="center_horizontal" android:id="@id/phone_code_login_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="15.0dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_subtitle" app:liv_action_text="@string/ok" />
+</androidx.constraintlayout.widget.ConstraintLayout>

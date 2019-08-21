@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/lay_container" android:background="@color/jike_card_background_white" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_margin="5.0dip" android:elevation="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/layout_portrait_card_header" />
+    <com.ruguoapp.jike.widget.view.FlowLayout android:id="@id/lay_pic_container" android:layout_width="wrap_content" android:layout_height="26.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="8.0dip" app:fl_horizontal_margin="3.0dip" app:fl_max_lines="1" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

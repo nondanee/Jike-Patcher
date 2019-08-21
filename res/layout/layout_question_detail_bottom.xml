@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="@dimen/question_detail_bottom_height" android:paddingStart="@dimen/jike_list_common_padding" android:paddingEnd="@dimen/jike_list_common_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.view.widget.VerticalIconTextItemLayout android:id="@id/lay_repost" android:layout_width="wrap_content" android:layout_height="fill_parent" app:icon="@drawable/ic_messages_repost" app:text="转发问题" app:verticalTextColor="@color/jike_text_light_gray" />
+    <com.ruguoapp.jike.view.widget.VerticalIconTextItemLayout android:id="@id/lay_share" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_toEndOf="@id/lay_repost" app:icon="@drawable/ic_messages_share" app:text="分享问题" app:verticalTextColor="@color/jike_text_light_gray" />
+    <TextView android:textSize="@dimen/text_14" android:textColor="@color/text_dark_gray" android:gravity="center" android:id="@id/tv_question_action" android:layout_width="120.0dip" android:layout_height="44.0dip" android:text="添加回答" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    <View style="@style/Divider" />
+</RelativeLayout>

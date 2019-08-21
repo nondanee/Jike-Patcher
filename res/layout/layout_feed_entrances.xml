@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/jike_background_white" android:paddingTop="@dimen/jike_list_common_padding" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/jike_list_common_padding" android:paddingEnd="@dimen/jike_list_common_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_nearby_post" android:layout_width="0.0dip" android:layout_height="70.0dip" android:layout_weight="1.0" />
+    <ImageView android:id="@id/iv_popular_post" android:layout_width="0.0dip" android:layout_height="70.0dip" android:layout_weight="1.0" android:layout_marginStart="15.0dip" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.cardview.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/jike_list_common_margin" android:minHeight="100.0dip">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/tv_content" android:padding="@dimen/jike_list_common_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="@dimen/text_6" android:textIsSelectable="true" />
+    </androidx.cardview.widget.CardView>
+    <LinearLayout android:id="@id/lay_btn_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="@dimen/jike_list_common_margin">
+        <Button android:id="@id/btn_set_true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_set_false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_marginStart="50.0dip" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lay_private_tip" android:background="@color/jike_background_white" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingEnd="@dimen/jike_list_padding_15">
+        <ImageView android:id="@id/iv_private_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/placeholder_privacy_protection" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip" android:layout_toEndOf="@id/iv_private_icon">
+            <TextView android:textSize="@dimen/text_16" android:textColor="@color/jike_text_dark_gray" android:id="@id/tv_private_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="隐私保护" />
+            <TextView android:textSize="@dimen/text_13" android:textColor="@color/jike_text_dark_gray" android:id="@id/iv_private_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="如果不希望别人通过手机号或微博找到你，可以在设置里开启隐私保护" />
+            <TextView android:textSize="@dimen/text_14" android:textColor="@color/text_dark_gray" android:layout_gravity="right" android:id="@id/tv_ok" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" android:text="去设置" android:paddingStart="15.0dip" android:paddingEnd="15.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="@dimen/divider_size_thin">
+        <View android:id="@id/center_line" android:background="@color/jike_divider_gray" android:layout_width="@dimen/divider_size_thin" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_centerInParent="true" />
+        <include android:id="@id/lay_header_contacts" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_toStartOf="@id/center_line" layout="@layout/layout_find_user_option" />
+        <include android:id="@id/lay_header_weibo" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_toEndOf="@id/center_line" layout="@layout/layout_find_user_option" />
+    </RelativeLayout>
+</LinearLayout>

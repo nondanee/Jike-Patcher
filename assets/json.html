@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans2">
+<head>
+    <title>Vue JSON</title>
+    <script src="https://cdn.staticfile.org/vue/2.6.6/vue.min.js"></script>
+    <link href="http://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style type="text/css">
+        body{background-color:#404040;}
+        *{padding:0;margin:0;box-sizing:border-box;font-family:Menlo,Consolas,monospace;color:#c1c1c1;font-size:11px;}
+        a{display:inline-block;text-decoration:underline;color:#1baae4;}
+        a:hover{text-decoration:none;color:#47a7e6;}
+        i{cursor:pointer;}
+        .json_key{color:#ef2668;font-weight:bold;}
+        .json_null{color:#98db2b;font-weight:bold;}
+        .json_string{color:#e1d16f;font-weight:bold;}
+        .json_url{color:#1BAF5D;font-weight:bold;}
+        .json_number{color:#50caef;font-weight:bold;}
+        .json_boolean{color:#98db2b;font-weight:bold;}
+        .json_hide{color:#d47cff;font-weight:bold;font-style:italic;}
+        #vm{padding:10px;}
+    </style>
+</head>
+<body>
+
+<!-- user-defined -->
+<script type="text/javascript">
+    function transferJson(json) {
+        vm.setJson(json);
+    }
+</script>
+<script>
+    var padstr = '&nbsp;&nbsp;&nbsp;&nbsp;';
+    function valueType(value) {
+        var tf = typeof value;
+        var ts = Object.prototype.toString.call(value);
+        if (tf === 'string' && value.startsWith('http')) {
+          tf = 'url'
+        }
+        return value === null ? 'Null' :
+            'boolean' === tf ? 'Boolean' :
+                'number' === tf ? 'Number' :
+                    'string' === tf ? 'String' :
+                      'url' === tf ? 'Url' :
+                        '[object Array]' === ts ? 'Array' : 'Object';
+    }
+
+</script>
+
+<!-- key template -->
+<script type="text/x-template" id="key-template">
+    <span class="key">
+    <span v-html="pad"></span><strong class="json_key" v-if="render">"{{jsonKey}}"</strong><template
+            v-if="render">:</template>
+  </span>
+</script>
+<script>
+    Vue.component('key', {
+        template: '#key-template',
+        props: ['json-key', 'current-depth'],
+        computed: {
+          pad: function () {
+              return new Array(this.currentDepth + 1).join(padstr);
+          },
+          render: function () {
+              return isNaN(this.jsonKey);
+          }
+        },
+    });
+
+</script>
+
+<!-- val template -->
+<script type="text/x-template" id="val-template">
+    <span class="val">
+    <template v-if="canToggle">
+      <template v-if="open">
+        <!-- Array -->
+        <template v-if="type === 'Array'"><i class="fa fa-minus-square-o" @click="toggle"></i>[<br>
+          <item class="item" :json-val="jsonVal" :current-depth="currentDepth+1" :max-depth="maxDepth"></item><span
+                    v-html="pad"></span>]<template v-if="!last">,</template><br>
+        </template>
+          <!-- Object -->
+        <template v-else-if="type === 'Object'"><i class="fa fa-minus-square-o" @click="toggle"></i>{<br>
+          <item class="item" :json-val="jsonVal" :current-depth="currentDepth+1" :max-depth="maxDepth"></item><span
+                    v-html="pad"></span>}<template v-if="!last">,</template><br>
+        </template>
+      </template>
+      <template v-else>
+        <!-- Array -->
+        <template v-if="type === 'Array'">
+          <i class="fa fa-plus-square-o" @click="toggle"></i><span class="json_hide">Array[<span class="json_number">{{jsonVal.length}}</span>]</span><template
+                v-if="!last">,</template><br>
+        </template>
+          <!-- Object -->
+        <template v-else-if="type === 'Object'">
+          <i class="fa fa-plus-square-o" @click="toggle"></i><span class="json_hide">Object{<span class="json_string">...</span>}</span><template
+                v-if="!last">,</template><br>
+        </template>
+      </template>
+    </template>
+    <template v-else>
+      <!-- Null -->
+      <template v-if="type === 'Null'">
+        <span class="json_null">null</span><template v-if="!last">,</template><br>
+      </template>
+        <!-- Url -->
+      <template v-else-if="type === 'Url'">
+        <span class="json_url"><a href="javascript:void(0);" @click="vm.openLink(jsonVal)">{{jsonVal}}</></span><template v-if="!last">,</template><br>
+      </template>
+        <!-- String -->
+      <template v-else-if="type === 'String'">
+        <span class="json_string">"{{jsonVal}}"</span><template v-if="!last">,</template><br>
+      </template>
+        <!-- Number -->
+      <template v-else-if="type === 'Number'">
+        <span class="json_number">{{jsonVal}}</span><template v-if="!last">,</template><br>
+      </template>
+        <!-- Boolean -->
+      <template v-else-if="type === 'Boolean'">
+        <span class="json_boolean">{{jsonVal ? 'true' : 'false'}}</span><template v-if="!last">,</template><br>
+      </template>
+    </template>
+  </span>
+</script>
+<script>
+    Vue.component('val', {
+        template: '#val-template',
+        props: ['json-val', 'current-depth', 'max-depth', 'last'],
+        data: function () {
+            return {open: this.currentDepth < this.maxDepth};
+        },
+        computed: {
+            pad: function () {
+                return new Array(this.currentDepth + 1).join(padstr);
+            },
+            type: function () {
+                return valueType(this.jsonVal);
+            },
+            canToggle: function () {
+                return this.type === 'Array' || this.type === 'Object';
+            }
+        },
+        methods: {
+            toggle: function () {
+                this.open = !this.open;
+            }
+        }
+    });
+
+</script>
+
+<!-- item template -->
+<script type="text/x-template" id="item-template">
+    <span>
+    <template v-for="(key, i) in keys">
+      <key :json-key="key" :current-depth="currentDepth"></key>
+      <val :last="i === keys.length-1"
+           :json-val="jsonVal[key]"
+           :current-depth="currentDepth"
+           :max-depth="maxDepth">
+      </val>
+    </template>
+  </span>
+</script>
+<script>
+    Vue.component('item', {
+        template: '#item-template',
+        props: ['json-key', 'json-val', 'current-depth', 'max-depth'],
+        computed: {
+            pad: function () {
+                return new Array(this.currentDepth).join(padstr);
+            },
+            type: function () {
+                return valueType(this.jsonVal);
+            },
+            keys: function () {
+                return Object.keys(this.jsonVal);
+            }
+        }
+    });
+
+</script>
+
+<!-- vm -->
+<div id="vm" style="padding:10px">
+    <val :json-val="json" :current-depth="currentDepth" :max-depth="maxDepth" :last="true"></val>
+</div>
+<script>
+    var vm = new Vue({
+        el: '#vm',
+        data: {
+            currentDepth: 0,
+            maxDepth: 3,
+            json: {
+            }
+        },
+        methods: {
+            getJson: function () {
+              return this.json;
+            },
+            setJson: function (json) {
+              this.json = json;
+            },
+            openLink: function(val) {
+              const url = "jike://page.jk/web?url=" + encodeURIComponent(val)
+              console.log(url)
+              window.location.href = url
+            },
+        }
+    });
+
+</script>
+</body>
+</html>

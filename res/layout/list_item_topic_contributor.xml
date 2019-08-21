@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="@dimen/jike_list_common_margin" app:cardBackgroundColor="@color/jike_card_background_white" app:cardCornerRadius="8.0dip" app:cardElevation="3.0dip" app:cardMaxElevation="6.0dip">
+        <com.ruguoapp.jike.view.widget.GradualLinearLayout android:orientation="vertical" android:id="@id/lay_gradual" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:padding="@dimen/jike_list_padding_15" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.ruguoapp.jike.widget.view.badge.BadgeImageView android:id="@id/iv_avatar" android:layout_width="50.0dip" android:layout_height="40.0dip" android:layout_centerVertical="true" android:paddingEnd="10.0dip" />
+                    <com.ruguoapp.jike.business.main.ui.topicdetail.involved.InvolvedUserFollowView android:id="@id/btn_involved_follow" android:visibility="gone" android:layout_width="60.0dip" android:layout_height="30.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                    <com.ruguoapp.jike.widget.view.slicetext.SliceTextView android:ellipsize="end" android:id="@id/stv_username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignTop="@id/iv_avatar" android:layout_marginEnd="@dimen/jike_list_common_margin" android:layout_toStartOf="@id/btn_involved_follow" android:layout_toEndOf="@id/iv_avatar" style="@style/JikeList.Main" />
+                    <TextView android:textSize="@dimen/text_12" android:textColor="@color/jike_text_light_gray" android:ellipsize="end" android:id="@id/tv_achievement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:singleLine="true" android:layout_below="@id/stv_username" android:layout_alignStart="@id/stv_username" />
+                </RelativeLayout>
+                <com.ruguoapp.jike.business.main.explore.widget.UserPostsLayout android:id="@id/lay_message_container" android:layout_width="fill_parent" android:layout_height="142.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="10.0dip" />
+            </LinearLayout>
+        </com.ruguoapp.jike.view.widget.GradualLinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

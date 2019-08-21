@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?colorPrimary" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_appbar_right_text" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/jike_text_light_gray" android:gravity="center_vertical" android:id="@id/tv_bio_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="44.0dip" android:text="签名不能含有空行，且最大行数为6行" android:layout_alignParentBottom="true" android:paddingStart="@dimen/jike_list_padding_15" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_light_gray" android:gravity="center|right" android:id="@id/tv_remain_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="44.0dip" android:layout_alignParentBottom="true" android:paddingEnd="20.0dip" android:layout_alignParentEnd="true" />
+        <EditText android:textColorHint="@color/jike_text_light_gray" android:gravity="top" android:id="@id/et_input" android:background="@null" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/tv_remain_count" android:inputType="none" />
+    </RelativeLayout>
+</LinearLayout>

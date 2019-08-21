@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/lay_icon_text" style="@style/HomeTab.Layout">
+        <ImageView android:id="@id/iv_main_tab_icon" android:tint="@color/jike_text_dark_gray" style="@style/HomeTab.Icon" />
+        <com.ruguoapp.jike.view.widget.TabTextView android:id="@id/tv_main_tab_title" style="@style/HomeTab.Text" />
+    </LinearLayout>
+    <View android:id="@id/main_tab_badge" android:layout_alignTop="@id/lay_icon_text" android:layout_alignEnd="@id/lay_icon_text" style="@style/HomeTab.Badge" />
+</RelativeLayout>

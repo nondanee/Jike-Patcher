@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ruguoapp.jike.view.widget.CollapseTextView android:id="@id/ctv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" />
+    <TextView android:textSize="@dimen/text_16" android:textColor="@color/jike_blue" android:id="@id/tv_view_source" android:background="?selectableItemBackground" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="原文链接" android:drawablePadding="3.0dip" />
+    <com.ruguoapp.jike.view.widget.VideoLayout android:id="@id/lay_video" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" />
+    <com.ruguoapp.jike.view.widget.grid.GridPicLayout android:id="@id/gl_pics" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" />
+    <com.ruguoapp.jike.view.widget.MediaAreaLayout android:id="@id/lay_media_area" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" />
+</LinearLayout>

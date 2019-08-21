@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivColorTargetSwitch" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/ic_story_edit_font_with_bg" android:layout_marginStart="25.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/colorPickerBar" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.ruguoapp.jike.business.story.ui.widget.ColorPickerBar android:layout_gravity="end|center" android:id="@id/colorPickerBar" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_marginStart="24.0dip" app:cpb_button_radius="11.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/ivColorTargetSwitch" app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

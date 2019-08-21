@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/gradual_mask" android:padding="@dimen/jike_list_common_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:layout_marginEnd="-8.0dip" app:justifyContent="space_between">
+        <TextView android:textSize="@dimen/text_11" android:textColor="@color/jike_text_dark_gray" android:id="@id/tv_question" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="问题" android:paddingStart="5.0dip" android:paddingEnd="5.0dip" app:layout_alignSelf="center" />
+        <ImageView android:id="@id/iv_close" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_close_black_rounded" />
+    </com.google.android.flexbox.FlexboxLayout>
+    <TextView android:textSize="@dimen/text_18" android:textColor="@color/jike_text_dark_gray" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" />
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/jike_text_medium_gray" android:ellipsize="end" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:maxLines="2" />
+    <com.ruguoapp.jike.business.question.ui.widget.FlowPictureLayout android:id="@id/lay_pic_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+</LinearLayout>

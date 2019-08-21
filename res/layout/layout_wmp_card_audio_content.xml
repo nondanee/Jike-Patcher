@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:tint="@color/black_ar70" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+        <FrameLayout android:layout_width="60.0dip" android:layout_height="60.0dip">
+            <ImageView android:id="@id/iv_pic" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="center" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_wechat_app_share_music" />
+        </FrameLayout>
+        <TextView android:textSize="@dimen/text_15" android:textColor="@color/white" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_13" android:textColor="@color/white_ar80" android:ellipsize="end" android:id="@id/tv_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:singleLine="true" />
+    </LinearLayout>
+</FrameLayout>

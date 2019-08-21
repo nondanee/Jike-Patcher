@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/lay_play_video" android:background="@color/black" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ruguoapp.jike.video.ui.widget.VideoPlayLayout android:layout_gravity="center" android:id="@id/lay_video" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <FrameLayout android:layout_gravity="bottom" android:id="@id/lay_progress" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ProgressBar android:layout_gravity="bottom" android:id="@id/horizontal_progress_bar" android:layout_width="fill_parent" android:layout_height="3.0dip" style="?android:progressBarStyleHorizontal" />
+            <TextView android:textSize="@dimen/text_12" android:textColor="@color/white" android:gravity="end" android:layout_gravity="bottom" android:id="@id/tv_remain_duration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_marginEnd="10.0dip" />
+        </FrameLayout>
+        <com.ruguoapp.jike.video.ui.widget.VideoStatusIndicator android:id="@id/video_status_indicator" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <ProgressBar android:layout_gravity="right" android:id="@id/video_auto_play_progressbar" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginTop="10.0dip" android:indeterminate="true" android:layout_marginEnd="10.0dip" />
+</FrameLayout>

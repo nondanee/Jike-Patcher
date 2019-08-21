@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_12" android:textColor="@color/jike_text_medium_gray" android:gravity="center" android:id="@id/tv_view_more" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="44.0dip" android:text="查看你们所有共同加入的圈子"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

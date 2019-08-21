@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="pre_login_margin">30.0dip</dimen>
+</resources>

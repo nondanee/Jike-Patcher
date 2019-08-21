@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lay_container" android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/lay_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/jike_list_common_margin">
+        <TextView android:textSize="@dimen/text_16" android:textColor="@color/jike_text_dark_gray" android:id="@id/tv_recommend_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/text_12" android:textColor="@color/jike_text_light_gray" android:id="@id/tv_subtitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/tv_recommend_title" />
+        <com.ruguoapp.jike.core.da.view.DrawableDaTextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_medium_gray" android:gravity="center_vertical" android:id="@id/more_view" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:drawablePadding="3.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <com.ruguoapp.jike.view.widget.HorizontalOverScrollLayout android:id="@id/lay_rv_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/lay_title" />
+    <View android:id="@id/divider" android:visibility="gone" android:layout_below="@id/lay_rv_container" android:layout_marginStart="@dimen/jike_list_common_margin" style="@style/Divider" />
+</RelativeLayout>

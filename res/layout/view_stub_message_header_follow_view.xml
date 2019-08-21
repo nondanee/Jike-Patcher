@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.FollowButton android:textSize="@dimen/text_12" android:id="@id/df_following" android:layout_width="56.0dip" android:layout_height="26.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

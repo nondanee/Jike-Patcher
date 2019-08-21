@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/pull_layout" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.business.main.explore.widget.ExploreToolbarLayout android:id="@id/lay_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ruguoapp.jike.business.main.explore.widget.ExploreSquareLayout android:id="@id/lay_square" android:padding="20.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <com.ruguoapp.jike.business.main.explore.cardstackview.CardStackView android:id="@id/card_recycler_view" android:padding="20.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:translationZ="6.0dip" />
+    <com.ruguoapp.jike.business.main.explore.widget.ExploreFAB android:id="@id/fab_prev" android:src="@drawable/ic_discover_next_card_back" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toStartOf="@id/fab_tools" app:layout_constraintHorizontal_chainStyle="spread" app:layout_constraintStart_toStartOf="parent" style="@style/ExploreFAB.Large" />
+    <com.ruguoapp.jike.business.main.explore.widget.ExploreFAB android:id="@id/fab_tools" android:src="@drawable/ic_discover_more" app:layout_constraintBottom_toBottomOf="@id/fab_prev" app:layout_constraintEnd_toStartOf="@id/fab_next" app:layout_constraintStart_toEndOf="@id/fab_prev" app:layout_constraintTop_toTopOf="@id/fab_prev" style="@style/ExploreFAB.Small" />
+    <com.ruguoapp.jike.business.main.explore.widget.ExploreFAB android:id="@id/fab_next" android:src="@drawable/ic_discover_next_card_right" app:layout_constraintBottom_toBottomOf="@id/fab_prev" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toEndOf="@id/fab_tools" app:layout_constraintTop_toTopOf="@id/fab_prev" style="@style/ExploreFAB.Large" />
+    <View android:id="@id/mask_view" android:background="@color/jike_explore_mask_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+</merge>

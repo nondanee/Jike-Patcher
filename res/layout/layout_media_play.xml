@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/lay_media_cover" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.widget.view.DimImageView android:id="@id/iv_media_cover" android:layout_width="fill_parent" android:layout_height="fill_parent" app:dim_color="@color/image_color_filter_30" />
+    <ImageView android:layout_gravity="center" android:id="@id/iv_media_play" android:layout_width="32.0dip" android:layout_height="32.0dip" />
+</FrameLayout>

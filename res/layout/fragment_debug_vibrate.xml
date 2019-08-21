@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layContainer" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" app:justifyContent="space_evenly">
+        <Button android:id="@id/btnClockTick" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CLOCK_TICK" style="@style/DebugButton" />
+        <Button android:id="@id/btnContextClick" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CONTEXT_CLICK" style="@style/DebugButton" />
+        <Button android:id="@id/btnKeyboardPress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="KEYBOARD_PRESS" style="@style/DebugButton" />
+    </com.google.android.flexbox.FlexboxLayout>
+    <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" app:justifyContent="space_evenly">
+        <Button android:id="@id/btnKeyboardRelease" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="KEYBOARD_RELEASE" style="@style/DebugButton" />
+        <Button android:id="@id/btnKeyboardTap" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="KEYBOARD_TAP" style="@style/DebugButton" />
+        <Button android:id="@id/btnLongPress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="LONG_PRESS" style="@style/DebugButton" />
+    </com.google.android.flexbox.FlexboxLayout>
+    <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" app:justifyContent="space_evenly">
+        <Button android:id="@id/btnTextHandleMove" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TEXT_HANDLE_MOVE" style="@style/DebugButton" />
+        <Button android:id="@id/btnVirtualKey" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="VIRTUAL_KEY" style="@style/DebugButton" />
+        <Button android:id="@id/btnVirtualKeyRelease" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="VIRTUAL_KEY_RELEASE" style="@style/DebugButton" />
+    </com.google.android.flexbox.FlexboxLayout>
+    <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" app:justifyContent="space_evenly">
+        <EditText android:gravity="center" android:id="@id/etVibrateDuration" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="震动时长" android:inputType="number" />
+        <Button android:id="@id/btnTestVibrate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="试试" style="@style/DebugButton" />
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

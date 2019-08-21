@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.widget.view.AdaptiveLinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/lay_author" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="@dimen/jike_list_common_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.widget.view.badge.BadgeImageView android:id="@id/iv_avatar" android:layout_width="36.0dip" android:layout_height="26.0dip" android:paddingEnd="10.0dip" />
+    <com.ruguoapp.jike.widget.view.slicetext.SliceTextView android:textSize="@dimen/text_13" android:textColor="@color/jike_text_dark_gray" android:ellipsize="end" android:id="@id/stv_screen_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingEnd="5.0dip" app:layout_adaptive="true" />
+    <TextView android:textSize="@dimen/text_13" android:textColor="@color/jike_text_light_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="发布" android:paddingEnd="5.0dip" />
+    <Space android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/iv_poi" android:layout_width="14.0dip" android:layout_height="12.0dip" android:src="@drawable/ic_personaltab_activity_add_location" android:paddingEnd="2.0dip" />
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/jike_text_light_gray" android:ellipsize="end" android:id="@id/tv_poi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingEnd="5.0dip" app:layout_adaptive="true" />
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/jike_text_light_gray" android:ellipsize="end" android:id="@id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:paddingEnd="5.0dip" />
+</com.ruguoapp.jike.widget.view.AdaptiveLinearLayout>

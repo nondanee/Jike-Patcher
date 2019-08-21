@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_manage_my_topics_push" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/jike_list_common_margin" app:settings_show_switch="false" app:settings_tip="@string/manage_my_topics_push_tip" app:settings_title="@string/manage_my_topics_push_title" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_follow_push" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/jike_list_common_margin" app:mask_enable="false" app:settings_show_switch="true" app:settings_tip="@string/follow_push_tip" app:settings_title="@string/follow_push_title" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_operation_push" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/jike_list_common_margin" app:mask_enable="false" app:settings_show_switch="true" app:settings_tip="@string/operation_push_tip" app:settings_title="@string/operation_push_title" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_pure_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/jike_list_common_margin" app:mask_enable="false" app:settings_show_switch="true" app:settings_tip="@string/pure_background_tip" app:settings_title="@string/pure_background_title" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_fcm_first" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/jike_list_common_margin" app:mask_enable="false" app:settings_show_switch="true" app:settings_tip="@string/fcm_first_tip" app:settings_title="@string/fcm_first_title" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_chat_sound" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/jike_list_common_margin" app:mask_enable="false" app:settings_show_switch="true" app:settings_tip="@string/chat_sound_tip" app:settings_title="@string/chat_sound_title" />
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/jike_list_common_margin" />
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/layout_appbar" />
+</RelativeLayout>

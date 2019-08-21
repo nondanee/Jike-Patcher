@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/Divider" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layMessage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ivMessageIcon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_chat_error" android:scaleType="centerCrop" android:layout_marginEnd="5.0dip" />
+        <TextView android:textSize="@dimen/text_16" android:textColor="@color/jike_text_dark_gray" android:gravity="center" android:id="@id/tvMessageText" android:layout_width="wrap_content" android:layout_height="56.0dip" />
+        <Space android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.ruguoapp.jike.business.chat.ui.widget.ChatInputLayout android:id="@id/layInput" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ruguoapp.jike.business.chat.ui.widget.ChatPanelLayout android:id="@id/layPanel" android:background="@color/jike_background_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="240.0dip" />
+</LinearLayout>

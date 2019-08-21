@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.ruguoapp.jike.view.widget.input.InputLayout android:id="@id/lay_input" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:input_enable_shadow="true" app:input_enable_size_limit="true" app:input_option_layout="@layout/layout_comment_input_sync_personal_update" />
+</RelativeLayout>

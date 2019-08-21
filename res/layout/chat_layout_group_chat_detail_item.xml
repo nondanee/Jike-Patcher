@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:background="@color/jike_background_white"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="15.0dip" android:paddingEnd="15.0dip">
+        <TextView android:textColor="@color/jike_text_dark_gray" android:id="@id/tvLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" />
+        <FrameLayout android:id="@id/container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/ivArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+</merge>

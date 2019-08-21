@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/lay_container" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <com.ruguoapp.jike.view.widget.refresh.PullRefreshLayout android:id="@id/lay_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" app:prl_header_backgroundColor="@color/jike_background_gray" />
+        <com.ruguoapp.jike.view.widget.input.InputLayout android:id="@id/lay_input" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" app:input_enable_shadow="true" app:input_enable_size_limit="true" app:input_option_layout="@layout/layout_comment_input_sync_personal_update" />
+    </RelativeLayout>
+    <include android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/layout_comments_title" />
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@id/lay_app_bar" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <androidx.appcompat.widget.Toolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/text_20" android:textColor="@color/jike_text_dark_gray" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tv_toolbar_title" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+                <RelativeLayout android:id="@id/lay_user_action" android:background="?colorPrimary" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ImageView android:id="@id/iv_toolbar_shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" android:src="@drawable/shadow_appbar" />
+    </com.google.android.material.appbar.AppBarLayout>
+</RelativeLayout>

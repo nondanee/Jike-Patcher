@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/action_bar_parent" android:layout_width="fill_parent" android:layout_height="@dimen/custom_action_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/lay_action_bar" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.ruguoapp.jike.widget.view.DimImageView android:id="@id/iv_actionbar_img" android:layout_width="fill_parent" android:layout_height="56.0dip" android:scaleType="centerCrop" app:dim_color="@color/image_color_filter_50" />
+        <ImageView android:id="@id/iv_shadow" android:layout_width="fill_parent" android:layout_height="4.0dip" android:src="@drawable/shadow_appbar" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/lay_action_line" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageButton android:id="@id/btn_back" android:background="?actionBarItemBackground" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/ic_navbar_back" android:tint="@color/white" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/lay_action_title" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="56.0dip" android:layout_toStartOf="@id/btn_right" android:layout_toEndOf="@id/btn_back" />
+        <ImageButton android:id="@id/btn_right" android:background="?actionBarItemBackground" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/ic_navbar_share" android:tint="@color/white" android:layout_toStartOf="@id/lay_action_bar_right" android:layout_alignParentEnd="true" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/lay_action_bar_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="56.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:orientation="vertical" android:id="@id/layContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/layEnv" android:layout_width="fill_parent" android:layout_height="wrap_content" app:settings_text="default" app:settings_title="env" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="@dimen/jike_list_margin_15" android:layout_marginEnd="10.0dip">
+                <com.google.android.material.textfield.TextInputLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText android:textColor="@color/jike_text_dark_gray" android:textColorHint="@color/jike_text_light_gray" android:id="@id/etWeb" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="输入 URL" android:inputType="textUri" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button android:id="@id/btnOpenWeb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="打开" style="@style/DebugButton" />
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/jike_list_margin_15" android:layout_marginEnd="@dimen/jike_list_margin_15" style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                <com.google.android.material.textfield.TextInputEditText android:textColor="@color/jike_text_dark_gray" android:textColorHint="@color/jike_text_light_gray" android:id="@id/etMarket" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="自定义渠道名" android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:id="@id/btnLoadPatch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="load patch" android:layout_weight="1.0" style="@style/DebugButton" />
+                <Button android:id="@id/btnCleanPatch" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="clean patch" android:layout_weight="1.0" style="@style/DebugButton" />
+            </LinearLayout>
+            <Spinner android:entries="@array/push_platforms" android:id="@id/spinnerPush" android:layout_width="fill_parent" android:layout_height="48.0dip" android:spinnerMode="dropdown" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" android:backgroundTint="@color/jike_text_dark_gray" />
+            <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:justifyContent="space_evenly">
+                <Button android:id="@id/btnUserInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="用户信息" style="@style/DebugButton" />
+                <Button android:id="@id/btnDebugExploreDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="探索页日期" style="@style/DebugButton" />
+                <Button android:id="@id/btnPreLogin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="登录前置" style="@style/DebugButton" />
+            </com.google.android.flexbox.FlexboxLayout>
+            <TextView android:textColor="@color/jike_text_medium_gray" android:id="@id/tvUserInfo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textIsSelectable="true" android:paddingStart="@dimen/jike_list_common_padding" android:paddingEnd="@dimen/jike_list_common_padding" />
+            <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:justifyContent="space_evenly">
+                <Button android:id="@id/btnCrash" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="闪退" style="@style/DebugButton" />
+                <Button android:id="@id/btnNotification" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="通知" style="@style/DebugButton" />
+                <Button android:id="@id/btnInstall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="安装" style="@style/DebugButton" />
+            </com.google.android.flexbox.FlexboxLayout>
+            <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:justifyContent="space_evenly">
+                <Button android:id="@id/btnDebugWmp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="小程序" style="@style/DebugButton" />
+                <Button android:id="@id/btnPicture" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/activity_debug_picture" style="@style/DebugButton" />
+                <Button android:id="@id/btnDebugVideo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="视频" style="@style/DebugButton" />
+            </com.google.android.flexbox.FlexboxLayout>
+            <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:justifyContent="space_evenly">
+                <Button android:id="@id/btnHybrid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="hybrid" style="@style/DebugButton" />
+                <Button android:id="@id/btnOpenYellowPage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="黄页" style="@style/DebugButton" />
+                <Button android:id="@id/btnCoordinate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="地理位置" style="@style/DebugButton" />
+            </com.google.android.flexbox.FlexboxLayout>
+            <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:justifyContent="space_evenly">
+                <Button android:id="@id/btnDebugDesignDialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="对话框" style="@style/DebugButton" />
+                <Button android:id="@id/btnDebugChat" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="聊天" style="@style/DebugButton" />
+                <Button android:id="@id/btnDebugSpan" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="span" android:textAllCaps="false" style="@style/DebugButton" />
+            </com.google.android.flexbox.FlexboxLayout>
+            <com.google.android.flexbox.FlexboxLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:justifyContent="space_evenly">
+                <Button android:id="@id/btnJiguangLogin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="一键登录" style="@style/DebugButton" />
+                <Button android:id="@id/btnDebugZxing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="扫码" style="@style/DebugButton" />
+                <Button android:id="@id/btnDebugHaptic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="震动" style="@style/DebugButton" />
+            </com.google.android.flexbox.FlexboxLayout>
+            <Button android:id="@id/btnLocalServer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="启动 Local Server" style="@style/DebugButton" />
+            <Button android:id="@id/btnErrorNetworkNotification" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/DebugButton" />
+            <Button android:layout_gravity="center_horizontal" android:id="@id/btnRecommendAbTest" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fragment_debug_recommend" style="@style/DebugButton" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/layTokenExpireShort" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_enable="false" app:settings_show_switch="true" app:settings_title="token过期时间缩短（10s）" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/layItemInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_enable="false" app:settings_show_switch="true" app:settings_title="显示消息卡片调试信息" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/layTopicInfo" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_enable="false" app:settings_show_switch="true" app:settings_title="显示圈子详情页调试信息" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/tabRecommend" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_enable="false" app:settings_show_switch="true" app:settings_title="测试推荐列表" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/tabPersonalUpdate" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_enable="false" app:settings_show_switch="true" app:settings_title="测试动态列表" />
+            <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/tabDebugMarkRead" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_enable="false" app:settings_show_switch="true" app:settings_title="显示已读调试信息" />
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginStart="@dimen/jike_list_margin_15" android:layout_marginEnd="@dimen/jike_list_margin_15">
+                <Spinner android:id="@id/spinnerAction" android:layout_width="wrap_content" android:layout_height="48.0dip" android:spinnerMode="dropdown" android:backgroundTint="@color/jike_text_dark_gray" />
+                <CheckBox android:textColor="@color/jike_text_medium_gray" android:id="@id/cbOnlyOfficial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="官方圈子" android:buttonTint="@color/checkbox_tint" />
+                <Button android:id="@id/btnTopicAction" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始" android:layout_marginStart="10.0dip" style="@style/DebugButton" />
+            </LinearLayout>
+            <TextView android:textColor="@color/jike_text_medium_gray" android:gravity="center" android:id="@id/tvSubscribeTopicsOutput" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <com.ruguoapp.jike.widget.view.poptext.PopTextView android:id="@id/jumpText" android:layout_width="wrap_content" android:layout_height="wrap_content" app:textSize="@dimen/text_20" />
+                <TextView android:textSize="@dimen/text_24" android:textColor="@color/white" android:gravity="center" android:id="@id/red" android:background="@color/jike_red" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="+" android:layout_marginStart="8.0dip" />
+                <TextView android:textSize="@dimen/text_24" android:textColor="@color/white" android:gravity="center" android:id="@id/green" android:background="@color/jike_blue" android:layout_width="50.0dip" android:layout_height="50.0dip" android:text="-" android:layout_marginStart="8.0dip" />
+            </LinearLayout>
+            <FrameLayout android:background="@color/black" android:layout_width="fill_parent" android:layout_height="80.0dip">
+                <com.ruguoapp.jike.view.widget.FanShapeProgressBar android:layout_gravity="center" android:id="@id/progressBar" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/layout_appbar_right_text" />
+</RelativeLayout>

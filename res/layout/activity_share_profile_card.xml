@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/text_dark_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="?actionBarSize">
+        <ScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/lay_snapshot" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ruguoapp.jike.widget.view.DimImageView android:id="@id/iv_profile_background" android:layout_width="fill_parent" android:layout_height="377.0dip" android:scaleType="centerCrop" app:dim_color="@color/image_color_filter_30" />
+                <com.ruguoapp.jike.business.sso.ui.ShareProfileCardCircleView android:id="@id/view_profile_share_bottom_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <ImageView android:id="@id/iv_dot" android:paddingTop="20.0dip" android:paddingBottom="@dimen/jike_list_common_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitCenter" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/lay_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true">
+                    <ImageView android:layout_width="100.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_appicon_personal_card" />
+                </LinearLayout>
+                <include layout="@layout/layout_share_person_info" />
+                <LinearLayout android:gravity="center" android:id="@id/lay_qr_code" android:background="@color/white" android:padding="10.0dip" android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_marginTop="50.0dip" android:layout_below="@id/iv_blue_riband" android:layout_centerHorizontal="true">
+                    <ImageView android:id="@id/iv_qr_code" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/text_dark_gray" android:layout_gravity="center_horizontal" android:id="@id/tv_qr_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" android:text="我在“即刻”，扫码来找我" android:layout_below="@id/lay_qr_code" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_medium_gray" android:layout_gravity="center_horizontal" android:id="@id/tv_qr_subtitle" android:paddingBottom="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_below="@id/tv_qr_title" android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </ScrollView>
+        <FrameLayout android:id="@id/lay_bottom_menu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <include layout="@layout/layout_share_card_bottom_menu" />
+        </FrameLayout>
+    </RelativeLayout>
+    <include android:id="@id/appbar" layout="@layout/layout_appbar_black" />
+</RelativeLayout>

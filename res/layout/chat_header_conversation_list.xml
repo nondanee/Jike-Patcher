@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/layBanner" android:padding="15.0dip" android:visibility="gone" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:id="@id/cardBanner" android:layout_width="fill_parent" android:layout_height="0.0dip" android:foreground="?selectableItemBackground" app:cardCornerRadius="10.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintDimensionRatio="345:100" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+            <ImageView android:id="@id/ivBannerImage" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ImageView android:layout_gravity="end|center|top" android:id="@id/ivBannerClose" android:padding="4.0dip" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="6.0dip" android:src="@drawable/ic_common_close_black_rounded" />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <include android:id="@id/layNotificationPermission" layout="@layout/list_item_function_small_card" />
+    <com.ruguoapp.jike.view.widget.GradualRelativeLayout android:orientation="horizontal" android:id="@id/layPokeEntryContainer" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="70.0dip" app:mask_view="@id/layPokeEntry">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/layPokeEntry" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/jike_list_common_padding" android:paddingEnd="@dimen/jike_list_common_padding">
+            <ImageView android:id="@id/ivPokeAvatar" android:layout_width="@dimen/chat_conversation_avatar_size" android:layout_height="@dimen/chat_conversation_avatar_size" android:src="@drawable/ic_chat_box" />
+            <TextView android:ellipsize="end" android:id="@id/tvPokeName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="收到的招呼" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" style="@style/JikeList.Main" />
+            <View android:id="@id/vPokeDot" android:visibility="gone" android:layout_width="6.0dip" android:layout_height="6.0dip" android:layout_marginEnd="10.0dip" />
+            <ImageView android:id="@id/ivPokeArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" />
+        </LinearLayout>
+    </com.ruguoapp.jike.view.widget.GradualRelativeLayout>
+    <com.ruguoapp.jike.view.widget.GradualRelativeLayout android:id="@id/layNotificationEntryContainer" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="70.0dip" android:layout_marginTop="1.0dip" app:mask_view="@id/layNotificationEntry">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layNotificationEntry" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/jike_list_common_padding" android:paddingEnd="@dimen/jike_list_common_padding">
+            <ImageView android:id="@id/ivNotificationAvatar" android:layout_width="@dimen/chat_conversation_avatar_size" android:layout_height="@dimen/chat_conversation_avatar_size" android:src="@drawable/ic_chat_notification" app:layout_constraintStart_toStartOf="parent" />
+            <TextView android:ellipsize="end" android:id="@id/tvNotificationName" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="我的通知" android:singleLine="true" android:layout_weight="1.0" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" style="@style/JikeList.Main" />
+            <com.ruguoapp.jike.business.chat.ui.widget.ChatUnreadView android:id="@id/vNotificationUnread" android:visibility="gone" android:layout_marginEnd="10.0dip" app:layout_constraintEnd_toStartOf="@id/ivNotificationArrow" style="@style/Chat.Unread" />
+            <ImageView android:id="@id/ivNotificationArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_common_arrow_right" app:layout_constraintEnd_toEndOf="parent" />
+        </LinearLayout>
+    </com.ruguoapp.jike.view.widget.GradualRelativeLayout>
+</LinearLayout>

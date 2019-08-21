@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ProgressBar android:id="@id/progressbar" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <RadioGroup android:orientation="horizontal" android:id="@id/rgHttpType" android:layout_width="fill_parent" android:layout_height="20.0dip" android:paddingEnd="@dimen/jike_list_common_padding" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <RadioButton android:textSize="@dimen/text_14" android:textColor="@color/white_ar80" android:id="@id/rbNormal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="Normal" android:buttonTint="@color/blue" />
+        <RadioButton android:textSize="@dimen/text_14" android:textColor="@color/white_ar80" android:id="@id/rbVideo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Video" android:buttonTint="@color/blue" />
+    </RadioGroup>
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/recyclerView" android:paddingBottom="30.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintTop_toBottomOf="@id/rgHttpType" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_marginStart="10.0dip" style="@style/TopicHeadlineNewsCard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/lay_root" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_common_recommend_friends_more" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="查看更多" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

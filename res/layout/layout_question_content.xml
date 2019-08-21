@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.view.widget.refer.QuestionReferLayout android:id="@id/lay_question_refer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/jike_text_light_gray" android:ellipsize="end" android:id="@id/tv_bottom_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" android:singleLine="true" app:layout_flexShrink="0.0" />
+    <com.ruguoapp.jike.business.personalupdate.create.ui.widget.TopicTagLayout android:id="@id/lay_topic_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" />
+</LinearLayout>

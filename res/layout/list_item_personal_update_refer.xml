@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualRelativeLayout android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_padding" layout="@layout/list_item_ugc_author" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layRefer" android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="@dimen/jike_list_common_padding" android:layout_marginStart="@dimen/list_item_personal_update_content_margin_left" android:layout_marginEnd="@dimen/jike_list_common_margin">
+            <com.ruguoapp.jike.view.widget.GradualLinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layMore" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_radius="2.0dip">
+                <View style="@style/Divider" />
+                <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_medium_gray" android:id="@id/tvMore" android:paddingTop="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="查看全部" />
+            </com.ruguoapp.jike.view.widget.GradualLinearLayout>
+        </LinearLayout>
+        <View android:layout_marginStart="@dimen/jike_list_common_margin" style="@style/Divider" />
+    </LinearLayout>
+</com.ruguoapp.jike.view.widget.GradualRelativeLayout>

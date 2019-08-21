@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.GradualRelativeLayout android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/list_item_message_head" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-15.0dip">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="@dimen/jike_list_common_margin" layout="@layout/list_item_message_content" />
+            <com.ruguoapp.jike.business.feed.ui.widget.LinkInfoLayout android:id="@id/lay_link_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="@dimen/jike_list_common_margin" />
+            <include layout="@layout/list_item_message_author" />
+            <com.ruguoapp.jike.business.comment.ui.widget.TopCommentLayout android:id="@id/lay_top_comment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/jike_list_common_margin" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="@dimen/jike_list_common_margin" />
+            <include layout="@layout/layout_message_comment" />
+            <View android:layout_marginTop="@dimen/jike_list_common_margin" android:layout_marginStart="@dimen/jike_list_common_margin" android:layout_marginEnd="@dimen/jike_list_common_margin" style="@style/Divider" />
+            <com.ruguoapp.jike.view.widget.action.ActionLayoutStub android:id="@id/lay_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" app:al_layout="@layout/layout_action_with_like" />
+        </LinearLayout>
+    </LinearLayout>
+</com.ruguoapp.jike.view.widget.GradualRelativeLayout>

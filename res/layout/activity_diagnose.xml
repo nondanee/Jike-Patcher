@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_appbar_right_text" />
+    <ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="@color/jike_text_dark_gray" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/jike_list_common_padding" android:textIsSelectable="true" />
+    </ScrollView>
+</LinearLayout>

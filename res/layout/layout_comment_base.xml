@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.widget.view.badge.BadgeImageView android:id="@id/iv_comment_avatar" android:padding="@dimen/jike_list_common_padding" android:layout_width="74.0dip" android:layout_height="74.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.ruguoapp.jike.widget.view.slicetext.SliceTextView android:textColor="@color/jike_text_medium_gray" android:ellipsize="end" android:id="@id/stv_username" android:paddingTop="@dimen/jike_list_common_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/comment_screen_name_max_width" android:singleLine="true" />
+                <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                <com.ruguoapp.jike.widget.view.poptext.PopTextView android:id="@id/tv_comment_like_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="8.0dip" app:textColor="@color/jike_text_light_gray" app:textSize="@dimen/text_12" />
+                <ImageView android:id="@id/iv_like_icon" android:paddingTop="@dimen/jike_list_common_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_comment_like" android:paddingStart="5.0dip" android:paddingEnd="@dimen/jike_list_common_padding" />
+            </LinearLayout>
+            <TextView android:textSize="@dimen/text_10" android:textColor="@color/jike_text_light_gray" android:id="@id/tv_comment_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginEnd="@dimen/jike_list_common_margin" />
+            <com.ruguoapp.jike.widget.view.slicetext.SliceTextView android:textColor="@color/jike_text_dark_gray" android:id="@id/stv_comment_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:lineSpacingExtra="@dimen/line_spacing_text_15" android:layout_marginEnd="@dimen/jike_list_common_margin" />
+            <com.ruguoapp.jike.view.widget.grid.GridPicItemView android:id="@id/lay_pic_grid" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginEnd="@dimen/jike_list_common_margin" />
+        </LinearLayout>
+        <View android:id="@id/lay_like_click_area" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginEnd="5.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

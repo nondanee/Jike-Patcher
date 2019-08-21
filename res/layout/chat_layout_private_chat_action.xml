@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View style="@style/Divider" />
+    <com.ruguoapp.jike.business.chat.ui.widget.HeyLayout android:id="@id/layHey" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ruguoapp.jike.business.chat.ui.widget.ChatInputLayout android:id="@id/layInput" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <com.ruguoapp.jike.business.chat.ui.widget.ChatPanelLayout android:id="@id/layPanel" android:background="@color/jike_background_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="240.0dip" />
+</LinearLayout>

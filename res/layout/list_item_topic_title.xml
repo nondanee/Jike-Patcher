@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_16" android:textColor="@color/jike_text_dark_gray" android:gravity="center_vertical" android:id="@id/tv_title" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="44.0dip" android:layout_marginTop="8.0dip" android:paddingStart="@dimen/jike_list_common_padding" android:paddingEnd="@dimen/jike_list_common_padding" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <View android:id="@id/line" app:layout_constraintStart_toStartOf="@id/tv_title" app:layout_constraintTop_toBottomOf="@id/tv_title" style="@style/Divider" />
+</androidx.constraintlayout.widget.ConstraintLayout>

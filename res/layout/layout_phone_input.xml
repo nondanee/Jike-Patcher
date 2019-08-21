@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/Login.Container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/lay_up" style="@style/Login.InputBox">
+        <TextView android:id="@id/tv_country_code" style="@style/Login.CountryCode" />
+        <View android:background="@color/jike_divider_gray" android:layout_width="0.5dip" android:layout_height="30.0dip" />
+        <EditText android:id="@id/et_up" android:layout_width="0.0dip" android:layout_height="fill_parent" android:hint="@string/login_hint_phone" android:layout_weight="1.0" android:inputType="phone" style="@style/Login.Input" />
+        <ImageView android:id="@id/iv_clear" style="@style/Login.ClearButton" />
+    </LinearLayout>
+    <TextView android:id="@id/tv_action" android:text="@string/login_get_code" style="@style/Login.ActionButton" />
+</LinearLayout>

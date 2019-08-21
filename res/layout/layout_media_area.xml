@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/gradual_mask" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.ruguoapp.jike.view.widget.MediaPlayLayout android:id="@id/lay_music_play" android:layout_width="74.0dip" android:layout_height="74.0dip" android:minWidth="74.0dip" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/lay_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/jike_list_common_padding" android:paddingEnd="@dimen/jike_list_common_padding">
+        <TextView android:textSize="@dimen/text_16" android:textColor="@color/jike_text_dark_gray" android:ellipsize="end" android:id="@id/tv_media_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/text_14" android:textColor="@color/jike_text_medium_gray" android:ellipsize="end" android:id="@id/tv_media_artist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

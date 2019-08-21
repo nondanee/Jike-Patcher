@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:padding="@dimen/jike_list_common_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textColor="@color/white" android:id="@id/tv_time" android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="@dimen/text_12" android:textColor="@color/white" android:id="@id/tv_tag" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/tv_time" />
+    <TextView android:textSize="@dimen/text_12" android:id="@id/tv_priority" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" app:layout_constraintStart_toStartOf="@id/tv_tag" app:layout_constraintTop_toBottomOf="@id/tv_tag" />
+    <TextView android:textColor="@color/white" android:id="@id/tv_content" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="4" android:layout_marginStart="8.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/guideline" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="vertical" android:id="@id/guideline" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_begin="90.0dip" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ruguoapp.jike.view.widget.refresh.PullRefreshLayout android:id="@id/lay_pull_refresh" android:background="@color/jike_background_gray" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/lay_content" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.ruguoapp.jike.view.widget.RgViewPager android:id="@id/view_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/lay_error_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</com.ruguoapp.jike.view.widget.refresh.PullRefreshLayout>

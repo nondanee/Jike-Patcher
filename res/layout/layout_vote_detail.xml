@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@color/jike_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lay_vote_up" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_vote_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_messages_up_vote" />
+        <TextView android:textColor="@color/jike_text_medium_gray" android:id="@id/tv_vote_up" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="赞同" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/lay_vote_down" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:id="@id/iv_vote_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_messages_up_vote" android:rotation="180.0" />
+        <TextView android:textColor="@color/jike_text_medium_gray" android:id="@id/tv_vote_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="反对" android:layout_marginStart="5.0dip" />
+    </LinearLayout>
+</LinearLayout>

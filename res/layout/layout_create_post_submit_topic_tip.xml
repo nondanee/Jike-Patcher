@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:src="@drawable/illustration_activity_suggest_find_friends_arrow" android:layout_marginStart="37.0dip" />
+    <TextView android:textSize="@dimen/text_15" android:textColor="@color/white" android:id="@id/tv_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-20.0dip" android:layout_below="@id/iv_icon" android:layout_marginStart="6.0dip" android:layout_marginEnd="@dimen/jike_list_common_margin" android:layout_toEndOf="@id/iv_icon" />
+</RelativeLayout>

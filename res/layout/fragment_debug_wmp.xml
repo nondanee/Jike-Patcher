@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/lay_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_wmp_preview_type" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_enable="false" app:settings_show_switch="true" app:settings_title="preview模式" />
+    <com.ruguoapp.jike.view.widget.RgSettingTab android:id="@id/lay_wmp_disable" android:layout_width="fill_parent" android:layout_height="wrap_content" app:mask_enable="false" app:settings_show_switch="true" app:settings_title="禁用小程序分享" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+        <EditText android:id="@id/et_id" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="wmp id" android:layout_weight="1.0" />
+        <EditText android:id="@id/et_path" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="wmp path" android:layout_weight="1.0" />
+    </LinearLayout>
+    <Button android:id="@id/btn_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="确定" />
+</LinearLayout>
