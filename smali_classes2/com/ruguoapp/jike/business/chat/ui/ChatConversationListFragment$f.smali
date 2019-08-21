@@ -56,7 +56,7 @@
 
     move-result-object p1
 
-    const/16 v0, 0x8
+    const/16 v0, 0x0
 
     .line 185
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
