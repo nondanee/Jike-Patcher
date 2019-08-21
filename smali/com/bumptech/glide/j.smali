@@ -627,7 +627,7 @@
 .end method
 
 .method private b(Ljava/lang/Object;)Lcom/bumptech/glide/j;
-    .locals 0
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -639,6 +639,29 @@
     .end annotation
 
     .line 359
+    instance-of v0, p1, Ljava/lang/String;
+
+    if-eqz v0, :cond_16
+
+    check-cast p1, Ljava/lang/String;
+
+    const-string v0, "cdn.ruguoapp.com"
+
+    const-string v1, "cdn.jellow.site"
+
+    invoke-virtual {p1, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v1, "pic-txcdn.ruguoapp.com"
+
+    const-string v2, "cdn.jellow.site"
+
+    invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object p1
+
+    :cond_16
     iput-object p1, p0, Lcom/bumptech/glide/j;->j:Ljava/lang/Object;
 
     const/4 p1, 0x1
