@@ -35,7 +35,7 @@
 .method public final a(Z)V
     .locals 6
 
-    const-string v0, "https://app.jike.ruguoapp.com"
+    const-string v0, "https://api.jellow.club"
 
     .line 36
     invoke-static {}, Lcom/ruguoapp/jike/core/util/g;->i()Ljava/lang/String;
@@ -43,7 +43,7 @@
     .line 39
     invoke-static {v0}, Lcom/ruguoapp/jike/network/d;->a(Ljava/lang/String;)V
 
-    const-string v0, "https://jike-io.jike.ruguoapp.com"
+    const-string v0, "https://jike-io.jellow.club"
 
     .line 40
     invoke-static {v0}, Lcom/ruguoapp/jike/network/d;->c(Ljava/lang/String;)Ljava/lang/String;

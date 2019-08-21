@@ -53,11 +53,11 @@
 
     sput-object v0, Lcom/ruguoapp/jike/business/debug/ui/b;->b:Ljava/util/List;
 
-    const-string v0, "app.jike.ruguoapp.com"
+    const-string v0, "api.jellow.club"
 
-    const-string v1, "videocdn.ruguoapp.com"
+    const-string v1, "cdn.jellow.site"
 
-    const-string v2, "cdn.ruguoapp.com"
+    const-string v2, "cdn.okjk.co"
 
     .line 21
     filled-new-array {v0, v1, v2}, [Ljava/lang/String;
@@ -574,7 +574,7 @@
 
     move-result-object v1
 
-    const-string v2, "http://119.29.29.29/d?dn=app.jike.ruguoapp.com"
+    const-string v2, "http://119.29.29.29/d?dn=api.jellow.club"
 
     .line 96
     invoke-interface {v1, v2}, Lcom/ruguoapp/jike/core/d/h;->a(Ljava/lang/String;)Lio/reactivex/w;

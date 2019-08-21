@@ -315,7 +315,7 @@
 
     move-result-object p0
 
-    const-string v0, "https://track.jike.ruguoapp.com/events/track"
+    const-string v0, "https://track.jellow.club/events/track"
 
     .line 87
     invoke-static {v0}, Lcom/ruguoapp/jike/network/d;->c(Ljava/lang/String;)Ljava/lang/String;
@@ -620,7 +620,7 @@
 
     move-result-object v0
 
-    const-string v1, "https://activity.jike.ruguoapp.com/1.0/billboard/heartbeat"
+    const-string v1, "https://activity.jellow.club/1.0/billboard/heartbeat"
 
     .line 94
     invoke-static {v1}, Lcom/ruguoapp/jike/network/d;->c(Ljava/lang/String;)Ljava/lang/String;

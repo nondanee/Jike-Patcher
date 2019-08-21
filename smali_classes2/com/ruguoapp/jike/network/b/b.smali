@@ -32,7 +32,7 @@
 
     move-result-object p0
 
-    const-string v0, "https://track.jike.ruguoapp.com/events/track"
+    const-string v0, "https://track.jellow.club/events/track"
 
     .line 17
     invoke-static {v0}, Lcom/ruguoapp/jike/network/d;->c(Ljava/lang/String;)Ljava/lang/String;
