@@ -766,22 +766,9 @@
 
     move-result-object p1
 
-    const-string p2, "/topics/tabs/%s/feed"
+    const-string p2, "/topicFeed/list"
 
-    const/4 p3, 0x1
-
-    new-array p3, p3, [Ljava/lang/Object;
-
-    const/4 p4, 0x0
-
-    aput-object p0, p3, p4
-
-    .line 197
-    invoke-static {p2, p3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-interface {p1, p0}, Lcom/ruguoapp/jike/core/d/h;->b(Ljava/lang/String;)Lio/reactivex/w;
+    invoke-interface {p1, p2}, Lcom/ruguoapp/jike/core/d/h;->b(Ljava/lang/String;)Lio/reactivex/w;
 
     move-result-object p0
 
