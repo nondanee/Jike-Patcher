@@ -54,7 +54,7 @@
 
     const-string v1, "App-Version"
 
-    const-string v2, "6.0.1"
+    const-string v2, "8.1.0"
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -158,7 +158,7 @@
 
     const-string v1, "ApplicationId"
 
-    const-string v2, "com.ruguoapp.jike"
+    const-string v2, "io.iftech.jellow"
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
