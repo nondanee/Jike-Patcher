@@ -2,7 +2,7 @@
 
 Make Jike APP work again
 
-Patch on Jike APP v6.0.1 for Android
+Patch on [Jike APP v6.0.1(844)](https://apkpure.com/%E5%8D%B3%E5%88%BB-%E8%AE%B0%E5%BD%95%E6%88%91%EF%BC%8C%E9%81%87%E8%A7%81%E4%BD%A0/com.ruguoapp.jike/download/844-APK) for Android
 
 Check `git log` if you are interested in modification
 
