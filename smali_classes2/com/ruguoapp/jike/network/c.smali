@@ -54,7 +54,7 @@
 
     const-string v1, "App-Version"
 
-    const-string v2, "8.1.0"
+    const-string v2, "8.2.3"
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -63,7 +63,7 @@
 
     const-string v1, "App-BuildNo"
 
-    const/16 v2, 0x34c
+    const/16 v2, 0x395
 
     invoke-static {v2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
